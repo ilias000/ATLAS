@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--<html> is the parent element of the head and the body-->
+<html lang="en">
+<!--Contains the page title, ect-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>ΑΤΛΑΣ</title>
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<!-- h1,h2,h3,h4,h5,h6 -->
+
+<body>
+    <!-- <div class="container"> -->
+    <div class="container">
+        <!--Top part of our entire page "main part"-->
+        <header>
+            <a href="index.html">
+                <img class="logo" src="images/logo.svg" alt="Logo image.">
+            </a>
+            <!--Navigation-->
+            <nav>
+                <!--Unorder list-->
+                <ul>
+                    <li>Φοιτητής/α <span class="material-icons">expand_more</span>
+                        <ul>\
+                            <!--ANCHOR ELEMENT-->
+                            <li><a href="#"><span class="material-icons">search</span>Αναζήτηση θέσης</a></li>
+                            <li><a href="#"><span class="material-icons">info</span>Βοήθεια</a></li>
+                            <li><a href="#"><span class="material-icons">call</span>Επικοινωνία </a></li>
+                        </ul>
+                    </li>
+                    <li>Φορέας Υποδοχής <span class="material-icons">expand_more</span>
+                        <ul>
+                            <li><a href="#"><span class="material-icons">search</span>Αναζήτηση θέσης</a></li>
+                            <li><a href="#"><span class="material-icons">info</span>Βοήθεια</a></li>
+                            <li><a href="#"><span class="material-icons">call</span>Επικοινωνία </a></li>
+                        </ul>
+                    </li>
+                    <li>Γραφείο Πρακτικής <span class="material-icons">expand_more</span></a>
+                        <ul>
+                            <li><a href="#"><span class="material-icons">search</span>Αναζήτηση θέσης</a></li>
+                            <li><a href="#"><span class="material-icons">info</span>Βοήθεια</a></li>
+                            <li><a href="#"><span class="material-icons">call</span>Επικοινωνία </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="buttons">
+                <a href="signIn.html" class="button button--full">Σύνδεση</a>
+                <a href="signUpPage.html" class="button button--outline">Εγγραφή</a>
+            </div>
+        </header>
+        <!--Main part of the page-->
+        <section></section>
+        <!--Secondary information for the main part of the page-->
+        <section id="seatch">
+            <div class="search-container">
+                <form action="#">
+                    <input id="searchBar" type="text" placeholder="Τίτλος εργασίας, Εταιρία Πόλη, Χώρα, Τ.Κ." name="search">
+                    <button id="searchButton" type="submit"><span class="material-icons">search</span></button>
+                </form>
+            </div>
+        </section>
+        <section id="mainImage">
+            <img src="images/mainPageImage.svg" alt="Main image.">
+        </section>
+        <section id="newPosiitons">
+        
+        </section>
+        <footer></footer>
+        <!-- </div> -->
+    </div>
+</body>
+
+</html>
