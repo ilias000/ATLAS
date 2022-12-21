@@ -130,6 +130,10 @@ nav ul li ul li a:hover:active {
   padding: .25rem;
 }
 
+.arrow{
+  vertical-align: middle;
+}
+
 /**************************/
 /* HEADER BUTTONS */
 /**************************/
