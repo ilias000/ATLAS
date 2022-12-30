@@ -9,8 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    <meta name="author" content="Free-Template.co" />
-    <link rel="shortcut icon" href="ftco-32x32.png">
     
     <link rel="stylesheet" href="css/custom-bs.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
@@ -28,7 +26,7 @@
   <div id="overlayer"></div>
   <div class="loader">
     <div class="spinner-border text-primary" role="status">
-      <span class="sr-only">Loading...</span>
+      <span class="sr-only">Φόρτωση...</span>
     </div>
   </div>
     
@@ -53,39 +51,24 @@
 
           <nav class="mx-auto site-navigation">
             <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
-              <li><a href="index.html" class="nav-link active">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li class="has-children">
-                <a href="job-listings.html">Job Listings</a>
+              <li><a href="search.html">Αναζήτηση Θέσης</a></li>
+              <li class="has-children"> 
+                <a href="#">Βοήθεια</a>
                 <ul class="dropdown">
-                  <li><a href="job-single.html">Job Single</a></li>
-                  <li><a href="post-job.html">Post a Job</a></li>
+                  <li><a href="studentHelp.html">Είμαι Φοιτητής</a></li>
+                  <li><a href="companyHlep.html">Είμαι Φορέας Υποδοχής</a></li>
                 </ul>
               </li>
-              <li class="has-children">
-                <a href="services.html">Pages</a>
-                <ul class="dropdown">
-                  <li><a href="services.html">Services</a></li>
-                  <li><a href="service-single.html">Service Single</a></li>
-                  <li><a href="blog-single.html">Blog Single</a></li>
-                  <li><a href="portfolio.html">Portfolio</a></li>
-                  <li><a href="portfolio-single.html">Portfolio Single</a></li>
-                  <li><a href="testimonials.html">Testimonials</a></li>
-                  <li><a href="faq.html">Frequently Ask Questions</a></li>
-                  <li><a href="gallery.html">Gallery</a></li>
-                </ul>
-              </li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li class="d-lg-none"><a href="post-job.html"><span class="mr-2">+</span> Post a Job</a></li>
-              <li class="d-lg-none"><a href="login.html">Log In</a></li>
+              <li><a href="contact.html">Επικοινωνία</a></li>
+              <li class="d-lg-none"><a href="post-job.html"><span class="mr-2">+</span>Δημιουργία Θέσης</a></li>
+              <li class="d-lg-none"><a href="login.html">Είσοδος/Εγγραφή</a></li>
             </ul>
           </nav>
           
           <div class="right-cta-menu text-right d-flex aligin-items-center col-6">
             <div class="ml-auto">
-              <a href="post-job.html" class="btn btn-outline-white border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-add"></span>Post a Job</a>
-              <a href="login.html" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Log In</a>
+              <a href="post-job.html" class="btn btn-outline-white border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-add"></span>Δημιουργία Θέσης</a>
+              <a href="login.html" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Είσοδος/Εγγραφή</a>
             </div>
             <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"><span class="icon-menu h3 m-0 p-0 mt-2"></span></a>
           </div>
@@ -99,57 +82,53 @@
 
       <div class="container">
         <div class="row align-items-center justify-content-center">
-          <div class="col-md-12">
+          <div class="col-md-12" style="top:40px">
             <div class="mb-5 text-center">
-              <h1 class="text-white font-weight-bold">The Easiest Way To Get Your Dream Job</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate est, consequuntur perferendis.</p>
+              <h1 class="text-white font-weight-bold">Θέσεις Πρακτικής Άσκησης</h1>
+              <p>Απέκτησε την εμπειρία που ψάχνεις με την πρακτική που σου ταιριάζει!</p>
             </div>
             <form method="post" class="search-jobs-form">
               <div class="row mb-5">
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
-                  <input type="text" class="form-control form-control-lg" placeholder="Job title, Company...">
+                  <input type="text" class="form-control form-control-lg" placeholder="Τίτλος εργασίας, Εταιρία...">
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
-                  <select class="selectpicker" data-style="btn-white btn-lg" data-width="100%" data-live-search="true" title="Select Region">
-                    <option>Anywhere</option>
-                    <option>San Francisco</option>
-                    <option>Palo Alto</option>
-                    <option>New York</option>
-                    <option>Manhattan</option>
-                    <option>Ontario</option>
-                    <option>Toronto</option>
-                    <option>Kansas</option>
-                    <option>Mountain View</option>
+                  <select class="selectpicker" data-style="btn-white btn-lg" data-width="100%" data-live-search="true" title="Επέλεξε Περιφέρεια" style="justify-items: center;">
+                    <option>Όλες</option>
+                    <option>Ανατολική / Θράκη</option>
+                    <option>Κεντρική Μακεδονία</option>
+                    <option>Δυτική Μακεδονία</option>
+                    <option>Ήπειρος</option>
+                    <option>Θεσσαλία</option>
+                    <option>Ιόνιοι Νήσοι</option>
+                    <option>Δυτική Ελλάδα</option>
+                    <option>Στερεά Ελλάδα</option>
+                    <option>Αττική</option>
+                    <option>Πελοπόννησος</option>
+                    <option>Βόρειο Αιγαίο</option>
+                    <option>Νότιο Αιγαίο</option>
+                    <option>Κρήτη</option>
                   </select>
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
-                  <select class="selectpicker" data-style="btn-white btn-lg" data-width="100%" data-live-search="true" title="Select Job Type">
-                    <option>Part Time</option>
-                    <option>Full Time</option>
+                  <select class="selectpicker" data-style="btn-white btn-lg" data-width="100%" data-live-search="true" title="Τύπος θέσης">
+                    <option>Πλήρη Απασχόληση</option>
+                    <option>Μερική Απασχόληση</option>
                   </select>
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
-                  <button type="submit" class="btn btn-primary btn-lg btn-block text-white btn-search"><span class="icon-search icon mr-2"></span>Search Job</button>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12 popular-keywords">
-                  <h3>Trending Keywords:</h3>
-                  <ul class="keywords list-unstyled m-0 p-0">
-                    <li><a href="#" class="">UI Designer</a></li>
-                    <li><a href="#" class="">Python</a></li>
-                    <li><a href="#" class="">Developer</a></li>
-                  </ul>
+                  <button type="submit" class="btn btn-primary btn-lg btn-block btn-search search-button"><span class="icon-search icon mr-2"></span>Αναζήτηση</button>
                 </div>
               </div>
             </form>
           </div>
+          <a href="#next" class="scroll-button smoothscroll">
+            <span class=" icon-keyboard_arrow_down"></span>
+          </a>
         </div>
       </div>
 
-      <a href="#next" class="scroll-button smoothscroll">
-        <span class=" icon-keyboard_arrow_down"></span>
-      </a>
+      
 
     </section>
     
