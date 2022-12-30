@@ -779,9 +779,11 @@ h1, h2, h3, h4 {
   display: block; }
 
 .custom-breadcrumbs a {
-  color: #3C6EAD; }
+  color: #A3C8FF; }
   .custom-breadcrumbs a:hover {
     color: #fff; }
+
+
 
 .custom-breadcrumbs .slash {
   color: rgba(255, 255, 255, 0.4); }
