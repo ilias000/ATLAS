@@ -721,6 +721,7 @@ h1, h2, h3, h4 {
   position: relative;
   background: #fff; }
   .job-listings .badge {
+    background-color: #3C6EAD;
     color: #fff;
     padding: 4px 10px; }
   @media (max-width: 991.98px) {
@@ -964,6 +965,7 @@ h1, h2, h3, h4 {
   margin: 0 5px;
   text-decoration: none; }
   .custom-pagination a.prev, .custom-pagination a.next {
+    color: #3C6EAD;
     width: auto;
     height: 30px;
     line-height: 30px;
@@ -974,6 +976,9 @@ h1, h2, h3, h4 {
     background: #3C6EAD;
     color: #fff;
     border-color: #3C6EAD; }
+  a{
+    color: #001f42;
+  }
 
 .border-width-2 {
   border-width: 2px !important; }
@@ -1301,9 +1306,10 @@ h1, h2, h3, h4 {
   text-decoration: none; }
 
 .site-footer {
-  padding: 7rem 0;
+  padding: 5rem 0;
   position: relative;
-  background: #555; }
+  background: #555;
+height: 200px; }
   @media (max-width: 991.98px) {
     .site-footer {
       padding: 2rem 0; } }
@@ -1340,7 +1346,7 @@ h1, h2, h3, h4 {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: #fff;
+    background: #3C6EAD;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -1367,7 +1373,7 @@ h1, h2, h3, h4 {
   width: 40px;
   height: 40px;
   position: relative;
-  background: #89ba16;
+  background: #3C6EAD;
   border-radius: 50%;
   text-decoration: none !important; }
   .footer-social a > span, .social a > span {
@@ -1688,4 +1694,49 @@ h1, h2, h3, h4 {
 
 .selectpicker {
   text-align: center;
+}
+
+.all-positions {
+  color: #fff;
+  background: #3C6EAD;
+  border-color: #ffffff;
+  border-radius: 4px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  }
+
+.all-positions:hover {
+  color: #3C6EAD;
+  background: #ffffff;
+  border-color: #3C6EAD;
+}
+
+.all-positions:active {
+  background-color: #3C6EAD;
+  color: #fff;
+  background: #3C6EAD;
+}
+
+.all-positions-div {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  margin: none;
+}
+
+.page-selector {
+  justify-content: flex-end;
+  width: auto;
+
+}
+
+.inner-page-selector {
+  max-width: 100%;
+  flex: none;
 }
