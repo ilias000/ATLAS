@@ -431,8 +431,7 @@ h1, h2, h3, h4 {
   color: #000; }
 
 .site-section {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding: 7rem 13rem;
   position: relative;
   z-index: 2; }
   @media (max-width: 991.98px) {
