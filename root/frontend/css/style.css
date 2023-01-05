@@ -427,6 +427,12 @@ body {
       opacity: 1;
       visibility: visible; }
 
+
+/* Sign Up/Login */
+.text-white.font-weight-bold{
+  color: #fff;
+}
+
 h1, h2, h3, h4 {
   color: #000; }
 
@@ -931,9 +937,9 @@ h1, h2, h3, h4 {
   background: #3C6EAD;
   border-color: #ffffff;}
   .btn.btn-primary:hover {
-    color: #000;
+    color: #3C6EAD ; 
     background: #ffffff;
-    border-color: #ffffff; }
+    border-color: #3C6EAD;}
   .btn.btn.btn-primary:active {
     background-color: #3C6EAD;
     color: #fff;
@@ -1362,7 +1368,7 @@ height: 200px; }
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
-      color: #000 !important; }
+      color: #fff !important; }
 
 .copyright {
   color: rgba(255, 255, 255, 0.5); }
@@ -1741,3 +1747,100 @@ height: 200px; }
   max-width: 100%;
   flex: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wrapper {
+  max-width: 50rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.tabs {
+  position: relative;
+  margin: 3rem 0;
+  background: #3C6EAD;
+  height: 14.75rem;
+}
+.tabs::before,
+.tabs::after {
+  content: "";
+  display: table;
+}
+.tabs::after {
+  clear: both;
+}
+.tab {
+  float: left;
+}
+.tab-switch {
+  display: none;
+}
+.tab-label {
+  position: relative;
+  display: block;
+  line-height: 2.75em;
+  height: 3em;
+  padding: 0 1.618em;
+  background: #3C6EAD;
+  border-right: 0.125rem solid #3C6EAD;
+  color: #fff;
+  cursor: pointer;
+  top: 0;
+  transition: all 0.25s;
+}
+.tab-label:hover {
+  top: -0.25rem;
+  transition: top 0.25s;
+}
+.tab-content {
+  height: 12rem;
+  position: absolute;
+  z-index: 1;
+  top: 2.75em;
+  left: 0;
+  padding: 1.618rem;
+  background: #fff;
+  color: #2c3e50;
+  border-bottom: 0.25rem solid #bdc3c7;
+  opacity: 0;
+  transition: all 0.35s;
+}
+.tab-switch:checked + .tab-label {
+  background: #fff;
+  color: #2c3e50;
+  border-bottom: 0;
+  border-right: 0.125rem solid #fff;
+  transition: all 0.35s;
+  z-index: 1;
+  top: -0.0625rem;
+}
+.tab-switch:checked + label + .tab-content {
+  z-index: 2;
+  opacity: 1;
+  transition: all 0.35s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
