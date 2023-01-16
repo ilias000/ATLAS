@@ -1752,3 +1752,25 @@ height: 200px; }
 
 
 
+
+
+
+input, select{
+  margin-bottom: 1rem;
+  height: 38px;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  padding-left: 10px;
+}
+input{
+  width: 97%;
+
+}
+select{
+  width: 100%;
+}
+
+
+
+
+
