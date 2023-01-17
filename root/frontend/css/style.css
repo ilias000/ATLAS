@@ -1200,6 +1200,7 @@ h1, h2, h3, h4 {
   color: #ced4da !important; }
 
 .block__76208 .accordion-item .heading {
+  margin-left: -30rem;
   font-size: 16px;
   font-weight: 400;
   padding: 10px 0; }
@@ -1225,9 +1226,9 @@ h1, h2, h3, h4 {
       -webkit-transition: .3s all ease;
       -o-transition: .3s all ease;
       transition: .3s all ease;
-      background: #89ba16;
+      background: #3C6EAD;
       color: #fff;
-      border: 1px solid #89ba16; }
+      border: 1px solid #3C6EAD; }
     .block__76208 .accordion-item .heading > a[aria-expanded="false"]:before {
       content: "\e313";
       color: #ccc;
