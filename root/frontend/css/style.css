@@ -379,7 +379,7 @@
         color: #000; }
         .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a:after {
           height: 2px;
-          background: #89ba16;
+          background: #3C6EAD;
           content: "";
           position: absolute;
           bottom: 0;
@@ -989,9 +989,9 @@ h1, h2, h3, h4 {
 
 .border-width-2 {
   border-width: 2px !important; }
-
+/* Because at the contact form the button had problem
 .btn-md {
-  padding: 12px 20px; }
+  padding: 12px 20px; } */
 
 .slanted:after, .slanted-gray:after {
   content: "";
@@ -1037,8 +1037,8 @@ h1, h2, h3, h4 {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    border: 1px solid #89ba16;
-    background: #89ba16;
+    border: 1px solid #3C6EAD;
+    background: #3C6EAD;
     margin-bottom: 1.5rem;
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
@@ -1083,7 +1083,7 @@ h1, h2, h3, h4 {
     .block__62849 .block__16443:hover .custom-icon {
       background: transparent; }
       .block__62849 .block__16443:hover .custom-icon [class^="icon-"], .block__62849 .block__16443:hover .custom-icon [class^="flaticon-"] {
-        color: #89ba16; }
+        color: #3C6EAD; }
 
 .block__87154 {
   position: relative;
@@ -1200,6 +1200,7 @@ h1, h2, h3, h4 {
   color: #ced4da !important; }
 
 .block__76208 .accordion-item .heading {
+  margin-left: -30rem;
   font-size: 16px;
   font-weight: 400;
   padding: 10px 0; }
@@ -1225,9 +1226,9 @@ h1, h2, h3, h4 {
       -webkit-transition: .3s all ease;
       -o-transition: .3s all ease;
       transition: .3s all ease;
-      background: #89ba16;
+      background: #3C6EAD;
       color: #fff;
-      border: 1px solid #89ba16; }
+      border: 1px solid #3C6EAD; }
     .block__76208 .accordion-item .heading > a[aria-expanded="false"]:before {
       content: "\e313";
       color: #ccc;
@@ -1533,9 +1534,9 @@ height: 200px; }
   .ul-check.white li:before {
     color: #fff; }
   .ul-check.success li:before {
-    color: #89ba16; }
+    color: #3C6EAD; }
   .ul-check.primary li:before {
-    color: #89ba16; }
+    color: #3C6EAD; }
 
 .block__18514 .block__47528 li {
   margin-bottom: 10px; }
@@ -1585,7 +1586,7 @@ height: 200px; }
   box-shadow: none !important; }
 
 .form-control:active, .form-control:focus {
-  border-color: #89ba16 !important; }
+  border-color: #3C6EAD !important; }
 
 .comment-form-wrap {
   clear: both; }
@@ -1668,7 +1669,7 @@ height: 200px; }
       background: rgba(0, 0, 0, 0.2);
       margin: 5px; }
     .single-carousel .owl-dots .owl-dot.active > span {
-      background: #89ba16; }
+      background: #3C6EAD; }
 
 .single-carousel img {
   max-width: 400px;
@@ -1771,6 +1772,8 @@ select{
 }
 
 
-
+.ContactForm{
+  min-width: -webkit-fill-available;
+}
 
 
