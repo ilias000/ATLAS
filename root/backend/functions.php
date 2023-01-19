@@ -1,11 +1,11 @@
 <?php
 function check_login($connection) // If the user is loged in return the data of the user else redirect to login/Signup Page.
 {
-    // Checking if there is a user_id inside SESSION.
-    if (isset($_SESSION['user_id'])) {
+    // Checking if there is a session_id inside SESSION.
+    if (isset($_SESSION['session_id'])) {
         // Checking if the id exists in the database.
-        $id = $_SESSION["user_id"];
-        $query = "SELECT * FROM users WHERE user_id = '$id' limit 1";
+        $id = $_SESSION["session_id"];
+        $query = "SELECT * FROM users WHERE session_id = '$id' limit 1";
         $result = mysqli_query($connection, $query);
         if ($result && mysqli_num_rows($result) > 0) // If the result is positive and the number of rows is greater than 0.
         {

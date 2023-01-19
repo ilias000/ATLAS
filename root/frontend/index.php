@@ -57,7 +57,7 @@
               <li class="has-children">
                 <a href="#">Βοήθεια</a>
                 <ul class="dropdown">
-                  <li><a href="./faqStudent.html">Είμαι Φοιτητής</a></li>
+                  <li><a href="./faqStudent.html">Είμαι Φοιτητής/ια</a></li>
                   <li><a href="./faqCompany.html">Είμαι Φορέας Υποδοχής</a></li>
                 </ul>
               </li>

@@ -161,7 +161,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { // If something was posted
           <div class="col-lg-6 mb-5" id="student">
             <!-- Form 1 -->
             <div style="display: flex; justify-content:space-between; align-items: baseline;">
-              <h2 class="mb-4">Εγγραφή Φοιτητή/τριας</h2>
+              <h2 class="mb-4">Εγγραφή Φοιτητή/ιας</h2>
               <button onclick="toggleSignUp()" class="btn px-4 btn-primary text-white" style="height: 40px;">Εγγραφή Εταιρείας</button>
             </div>
             <form action="#" class="p-4 border rounded">
