@@ -30,9 +30,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { // If something was posted
         // Set the SESSION id.
         $_SESSION["session_id"] = $user_data['session_id'];
         // Redirect the user.
-        if ($user_data['user_type'] === 'STUDENT') {
+        if ($user_data['user_type'] === 'ΦΟΙΤΗΤΗΣ') {
           header("Location: student.php");
-        } elseif ($user_data['user_type'] === 'COMPANY') {
+        } elseif ($user_data['user_type'] === 'ΕΤΑΙΡΕΙΑ') {
           header("Location: company.php");
         }
         die;
@@ -48,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { // If something was posted
 <html lang="en">
 
 <head>
-  <title>Είσοδος/Εγγραφή &mdash; Website Template by Colorlib</title>
+  <title>Είσοδος/Εγγραφή</title>
   <link rel="icon" type="image/ico" href="images/favicon.ico">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -73,7 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { // If something was posted
   <div id="overlayer"></div>
   <div class="loader">
     <div class="spinner-border text-primary" role="status">
-      <span class="sr-only">Loading...</span>
+      <span class="sr-only">Φότρωση...</span>
     </div>
   </div>
 
@@ -102,11 +102,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { // If something was posted
                 <a href="#">Βοήθεια</a>
                 <ul class="dropdown">
                   <li><a href="studentHelp.html">Είμαι Φοιτητής</a></li>
-                  <li><a href="companyHlep.html">Είμαι Φορέας Υποδοχής</a></li>
+                  <li><a href="companyHelp.html">Είμαι Φορέας Υποδοχής</a></li>
                 </ul>
               </li>
               <li><a href="contact.html">Επικοινωνία</a></li>
-              <li class="d-lg-none"><a href="post-job.html"><span class="mr-2">+</span>Δημιουργία Θέσης</a></li>
+              <li class="d-lg-none"><a href="post-job.php"><span class="mr-2">+</span>Δημιουργία Θέσης</a></li>
               <li class="d-lg-none"><a href="login.html">Είσοδος/Εγγραφή</a></li>
             </ul>
           </nav>
@@ -114,7 +114,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { // If something was posted
 
           <div class="right-cta-menu text-right d-flex aligin-items-center col-6">
             <div class="ml-auto">
-              <a href="post-job.html" class="btn btn-outline-white border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-add"></span>Δημιουργία Θέσης</a>
+              <a href="post-job.php" class="btn btn-outline-white border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-add"></span>Δημιουργία Θέσης</a>
               <!-- <a href="login.html" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Είσοδος</a> -->
             </div>
             <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"><span class="icon-menu h3 m-0 p-0 mt-2"></span></a>
@@ -131,7 +131,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { // If something was posted
           <div class="col-md-7">
             <h1 class="text-white font-weight-bold">Εγγραφή / Είσοδος</h1>
             <div class="custom-breadcrumbs">
-              <a href="index.html">Αρχική</a> <span class="mx-2 slash">/</span>
+              <a href="index.php">Αρχική</a> <span class="mx-2 slash">/</span>
               <span class="text-white"><strong>Είσοδος</strong></span>
             </div>
           </div>
