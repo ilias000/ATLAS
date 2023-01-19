@@ -1776,4 +1776,6 @@ select{
   min-width: -webkit-fill-available;
 }
 
-
+.form-errors{
+  color: red;
+}

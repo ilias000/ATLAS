@@ -1,5 +1,5 @@
 <?php
-function check_login($connection)
+function check_login($connection) // If the user is loged in return the data of the user else redirect to login/Signup Page.
 {
     // Checking if there is a user_id inside SESSION.
     if (isset($_SESSION['user_id'])) {
@@ -14,12 +14,12 @@ function check_login($connection)
         }
     }
 
-    // Redirect to login in case something is not correct (SESSION value does not exists or it exists but is not in the database).
-    header("Location: login.php");
+    // Redirect to loginSignup in case something is not correct (SESSION value does not exists or it exists but is not in the database).
+    header("Location: loginSignup.php");
     die; // So the code does not continue.
 }
 
-function random_number($max_length)
+function random_number($max_length) // Returns a random number with at least 4 digits.
 {
     $number = ""; // Will save the random number.
 
