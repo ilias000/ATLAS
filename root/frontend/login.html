@@ -93,12 +93,29 @@
 
     <!-- Forms -->
 
+    <script>
+      function toggleSignUp() {
+          var x = document.getElementById("student");
+          var y = document.getElementById("company");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+            y.style.display = "none";
+          } else {
+            x.style.display = "none";
+            y.style.display = "block";
+          }
+        }
+    </script>
+
     <section class="site-section">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 mb-5">
+          <div class="col-lg-6 mb-5" id="student">
             <!-- Form 1 -->
-            <h2 class="mb-4">Εγγραφή Φοιτητή/τριας</h2>
+            <div style="display: flex; justify-content:space-between; align-items: baseline;">
+              <h2 class="mb-4">Εγγραφή Φοιτητή/τριας</h2>
+              <button onclick="toggleSignUp()" class="btn px-4 btn-primary text-white" style="height: 40px;">Εγγραφή Εταιρείας</button>
+            </div>
             <form action="#" class="p-4 border rounded">
 
               <div class="row form-group">
@@ -169,37 +186,12 @@
             </form>
           </div>
 
-          <div class="col-lg-6">
-            <!-- Form 2 -->
-            <h2 class="mb-4">Είσοδος</h2>
-            <form action="#" class="p-4 border rounded">
-
-              <div class="row form-group">
-                <div class="col-md-12 mb-3 mb-md-0">
-                  <label class="text-black" for="fname">Email</label>
-                  <input type="text" id="fname" class="form-control" placeholder="Ηλεκτρονική διεύθυνση">
-                </div>
-              </div>
-              <div class="row form-group mb-4">
-                <div class="col-md-12 mb-3 mb-md-0">
-                  <label class="text-black" for="fname">Κωδικός πρόσβασης</label>
-                  <input type="password" id="fname" class="form-control" placeholder="Κωδικός πρόσβασης">
-                </div>
-              </div>
-
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <input type="submit" value="Είσοδος" class="btn px-4 btn-primary text-white">
-                </div>
-              </div>
-
-            </form>
-
-            
-          </div>
-          <div class="col-lg-6 mb-5">
+          <div class="col-lg-6 mb-5" id="company" style="display: none;">
             <!-- Form 1 -->
-            <h2 class="mb-4">Εγγραφή Εταιρείας</h2>
+            <div style="display: flex; justify-content:space-between; align-items: baseline;">
+              <h2 class="mb-4">Εγγραφή Εταιρείας</h2>
+              <button onclick="toggleSignUp()" class="btn px-4 btn-primary text-white" style="height: 40px;">Εγγραφή Φοιτητή/τριας</button>
+            </div>
             <form action="#" class="p-4 border rounded">
 
               <div class="row form-group">
@@ -290,6 +282,34 @@
                 </div>
               </div>
             </form>
+          </div>
+          <div class="col-lg-6">
+            <!-- Form 2 -->
+            <h2 class="mb-4">Είσοδος</h2>
+            <form action="#" class="p-4 border rounded">
+          
+              <div class="row form-group">
+                <div class="col-md-12 mb-3 mb-md-0">
+                  <label class="text-black" for="fname">Email</label>
+                  <input type="text" id="fname" class="form-control" placeholder="Ηλεκτρονική διεύθυνση">
+                </div>
+              </div>
+              <div class="row form-group mb-4">
+                <div class="col-md-12 mb-3 mb-md-0">
+                  <label class="text-black" for="fname">Κωδικός πρόσβασης</label>
+                  <input type="password" id="fname" class="form-control" placeholder="Κωδικός πρόσβασης">
+                </div>
+              </div>
+          
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <input type="submit" value="Είσοδος" class="btn px-4 btn-primary text-white">
+                </div>
+              </div>
+          
+            </form>
+          
+          
           </div>
         </div>
       </div>
