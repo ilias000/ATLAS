@@ -279,7 +279,7 @@
       </ul>
 
       <div class="all-positions-div">
-        <button type="submit" class="all-positions">Όλες οι θέσεις</button>
+        <a href="search.php" style="text-decoration: none;"><button type="submit" class="all-positions">Όλες οι θέσεις</button> </a>
         <div class="row pagination-wrap page-selector">
           <div class="col-md-6 text-center text-md-right inner-page-selector">
             <div class="custom-pagination ml-auto">
@@ -299,7 +299,7 @@
   </div>
   </section>
 
-  <footer>
+  <footer style="margin-bottom: 30px;">
     <table style="margin: 0 auto 0 auto;">
       <tr>
         <td><a href="http://minedu.gov.gr/" target="_blank"><img src="images/footer1.png" alt="Υπουργείο Παιδείας και Θρησκευμάτων" height="60"></a></td>
