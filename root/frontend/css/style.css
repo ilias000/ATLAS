@@ -1772,3 +1772,8 @@ select{
 .form-errors{
   color: red;
 }
+
+
+.mb-5 p, ul{
+  color: #000;
+}
