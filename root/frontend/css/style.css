@@ -4,6 +4,7 @@
   z-index: 1999;
   position: absolute;
   width: 100%;
+  background-color: #3C6EAD;
   top: 2rem; }
   .site-navbar .container-fluid {
     padding-left: 7rem;
@@ -1771,9 +1772,4 @@ select{
 
 .form-errors{
   color: red;
-}
-
-
-.mb-5 p, ul{
-  color: #000;
 }

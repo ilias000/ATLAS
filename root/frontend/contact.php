@@ -134,7 +134,7 @@
 
               <div class="row form-group">
                 <div class="col-md-12">
-                  <input type="submit" value="Αποστολή" class="btn btn-primary btn-md text-white">
+                  <input type="submit" value="Αποστολή" class="btn btn-primary btn-md text-white" style="width: 100%;">
                 </div>
               </div>
 

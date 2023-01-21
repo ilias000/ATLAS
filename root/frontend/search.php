@@ -45,6 +45,11 @@
     .job-listing {
         height: 150px;
     }
+
+    .section-hero.inner-page,
+    .section-hero.inner-page>.container>.row {
+        padding-top: 3em !important;
+    }
 </style>
 
 <head>
@@ -121,29 +126,29 @@
             </div>
         </header>
 
-        <div class="container">
-            <div class="row align-items-center justify-content-center" style="color: black;">
-                <div class="col-md-12" style="margin-top:200px">
-                    <div class="mb-5 text-center">
-                        <h1 class="text-black font-weight-bold">Αναζήτηση Θέσης</h1>
-                    </div>
-                    <form method="post" class="search-jobs-form">
-                        <div class="row mb-5" style="justify-content: space-between; flex-wrap: nowrap">
-                            <input type="text" class="form-control form-control-lg" style="width: 75%; height: 50px" placeholder="Τίτλος εργασίας, Εταιρία...">
-                            <button type="submit" class="btn btn-primary btn-lg btn-block btn-search search-button" style="width: 20%; height: 50px"><span class="icon-search icon mr-2"></span>Αναζήτηση</button>
+        <section class="section-hero overlay inner-page bg-image" style="background-image: url('images/hero_1.jpg');" id="home-section">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-12" style="margin-top:80px">
+                        <div class="mb-5 text-left">
+                            <h1 class="text-white font-weight-bold">Αναζήτηση Θέσης</h1>
+                            <div class="custom-breadcrumbs">
+                                <a href="index.php">Αρχική</a> <span class="mx-2 slash">/</span>
+                                <span class="text-white"><strong>Αναζήτηση Θέσης</strong></span>
+                            </div>
                         </div>
-                    </form>
+                        <form method="post" class="search-jobs-form">
+                            <div class="row mb-5" style="justify-content: space-between; flex-wrap: nowrap">
+                                <input type="text" class="form-control form-control-lg" style="width: 75%; height: 50px" placeholder="Τίτλος εργασίας, Εταιρία...">
+                                <button type="submit" class="btn btn-primary btn-lg btn-block btn-search search-button" style="width: 20%; height: 50px"><span class="icon-search icon mr-2"></span>Αναζήτηση</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <section class="site-section" id="next" style="width: 100%; padding: 50px 30px">
-
-            <div class="row mb-5 justify-content-center">
-                <div class="col-md-7 text-center">
-                    <h2 class="section-title mb-2">Νέες Θέσεις Πρακτικής</h2>
-                </div>
-            </div>
 
             <div style="display: flex; justify-content: start; color: black">
                 <div class="filters">
@@ -218,7 +223,7 @@
                                     <i class="fa fa-eur" aria-hidden="true"></i> 1000
                                 </div>
                                 <div class="job-listing-meta">
-                                    <span class="badge badge-danger">Part Time</span>
+                                    <span class="badge badge-danger">Μερική Απασχόληση</span>
                                 </div>
                             </div>
 
@@ -237,7 +242,7 @@
                                     <i class="fa fa-eur" aria-hidden="true"></i> 950
                                 </div>
                                 <div class="job-listing-meta">
-                                    <span class="badge badge-success">Full Time</span>
+                                    <span class="badge badge-success">Πλήρη Απασχόληση</span>
                                 </div>
                             </div>
                         </li>
@@ -256,7 +261,7 @@
                                     <i class="fa fa-eur" aria-hidden="true"></i> 673
                                 </div>
                                 <div class="job-listing-meta">
-                                    <span class="badge badge-success">Full Time</span>
+                                    <span class="badge badge-success">Πλήρη Απασχόληση</span>
                                 </div>
                             </div>
                         </li>
@@ -275,7 +280,7 @@
                                     <i class="fa fa-eur" aria-hidden="true"></i> 2400
                                 </div>
                                 <div class="job-listing-meta">
-                                    <span class="badge badge-success">Full Time</span>
+                                    <span class="badge badge-success">Πλήρη Απασχόληση</span>
                                 </div>
                             </div>
                         </li>
@@ -294,7 +299,7 @@
                                     <i class="fa fa-eur" aria-hidden="true"></i> 1100
                                 </div>
                                 <div class="job-listing-meta">
-                                    <span class="badge badge-success">Full Time</span>
+                                    <span class="badge badge-success">Πλήρη Απασχόληση</span>
                                 </div>
                             </div>
                         </li>
@@ -312,7 +317,7 @@
                                     <i class="fa fa-eur" aria-hidden="true"></i> 1000
                                 </div>
                                 <div class="job-listing-meta">
-                                    <span class="badge badge-danger">Part Time</span>
+                                    <span class="badge badge-danger">Μερική Απασχόληση</span>
                                 </div>
                             </div>
 
@@ -331,13 +336,13 @@
                                     <i class="fa fa-eur" aria-hidden="true"></i> 2500
                                 </div>
                                 <div class="job-listing-meta">
-                                    <span class="badge badge-success">Full Time</span>
+                                    <span class="badge badge-success">Πλήρη Απασχόληση</span>
                                 </div>
                             </div>
                         </li>
 
                     </ul>
-                    <div class="all-positions-div" style="justify-content: center;">
+                    <div class="all-positions-div" style="justify-content: end;">
                         <div class="row pagination-wrap page-selector">
                             <div class="col-md-6 text-center inner-page-selector">
                                 <div class="custom-pagination ml-auto">
