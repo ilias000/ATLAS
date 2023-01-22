@@ -1808,11 +1808,30 @@ select{
   background: #224d81;  
   }
 
-/* .list-unstyled, .pl-3{
+
+
 /* Job Description */
 
 .company-name{
   padding-left: 0.8rem;
+  color: #000;
+}
+.job-description-icon{
+  color: #000;
+  padding-right: 1rem;
+}
+.job-summary-text{
+  color: #3C6EAD;
+  font-weight: 600;
+}
+.job-description-text{
+  color: #000;
+}
+.responsibilities-text{
+  color: #000;
+}
+
+.responsibilities, .education, .ul-other span{
   color: #000;
 }
 .saved-jobs-h2{
@@ -1843,3 +1862,5 @@ a.saved-jobs-prev, a.saved-jobs-next {
 .link-1-2-3{
   color: white;
 }
+
+
