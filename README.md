@@ -1,2 +1,23 @@
 # ATLAS
-Web application for students internships using HTML, CSS, JavaScript and PHP. The UI design has been created with Figma.
+
+Μέλη ομάδας :
+    Όνομα : ΗΛΙΑΣ ΠΙΟΤΟΠΟΥΛΟΣ, KLERIANA KURRA
+    AM : 1115201800335, 1115201800230
+
+Έχουν υλοποιηθεί :
+    - Αρχική σελίδα (Frontend).
+    - Σελίδα Σύνδεσης/Εγγραφής Φοιτητή/ιας - Εταιρείας (Backend και Frontend)
+    - Σελίδα με πληροφορίες για τους Φοιτηττές/ιες.
+    - Σελίδα με πληροφορίες για την Εταιρεία.
+    - Σελίδα αναζήτησης διαθέσιμων θέσεων ΠΑ. (Frontend)
+    - Σελίδα επικοινωνίας. (Frontend)
+    - Sessions
+
+
+
+Σύνδεση:
+    Email : student@mail.com
+    Κωδικός : 123
+
+    Email : company@mail.com
+    Κωδικός : 123

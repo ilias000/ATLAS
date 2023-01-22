@@ -1773,3 +1773,12 @@ select{
 .form-errors{
   color: red;
 }
+
+.job-listing {
+  height: 150px !important;
+  width: 100%;
+}
+
+.job-listing-location {
+  color: black;
+}

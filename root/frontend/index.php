@@ -1,10 +1,18 @@
 <!doctype html>
 <html lang="en">
 
+<style>
+  .job-listing {
+    height: 150px !important;
+    width: 100%;
+  }
+</style>
+
 <head>
 
   <title>ΑΤΛΑΣ</title>
   <link rel="icon" type="image/ico" href="images/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -88,37 +96,9 @@
               <p>Απέκτησε την εμπειρία που ψάχνεις με την πρακτική που σου ταιριάζει!</p>
             </div>
             <form method="post" class="search-jobs-form">
-              <div class="row mb-5">
-                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
-                  <input type="text" class="form-control form-control-lg" placeholder="Τίτλος εργασίας, Εταιρία...">
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
-                  <select class="selectpicker" data-style="btn-white btn-lg" data-width="100%" data-live-search="true" title="Επέλεξε Περιφέρεια" style="justify-items: center;">
-                    <option>Όλες</option>
-                    <option>Ανατολική / Θράκη</option>
-                    <option>Κεντρική Μακεδονία</option>
-                    <option>Δυτική Μακεδονία</option>
-                    <option>Ήπειρος</option>
-                    <option>Θεσσαλία</option>
-                    <option>Ιόνιοι Νήσοι</option>
-                    <option>Δυτική Ελλάδα</option>
-                    <option>Στερεά Ελλάδα</option>
-                    <option>Αττική</option>
-                    <option>Πελοπόννησος</option>
-                    <option>Βόρειο Αιγαίο</option>
-                    <option>Νότιο Αιγαίο</option>
-                    <option>Κρήτη</option>
-                  </select>
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
-                  <select class="selectpicker" data-style="btn-white btn-lg" data-width="100%" data-live-search="true" title="Τύπος θέσης">
-                    <option>Πλήρη Απασχόληση</option>
-                    <option>Μερική Απασχόληση</option>
-                  </select>
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
-                  <button type="submit" class="btn btn-primary btn-lg btn-block btn-search search-button"><span class="icon-search icon mr-2"></span>Αναζήτηση</button>
-                </div>
+              <div class="row mb-5" style="justify-content: center; flex-wrap: nowrap">
+                <input type="text" class="form-control form-control-lg" style="width: 65%; margin-right:10px" placeholder="Τίτλος εργασίας, Εταιρία...">
+                <button type="submit" class="btn btn-primary btn-lg btn-block btn-search search-button" style="width: 15%;"><span class="icon-search icon mr-2"></span>Αναζήτηση</button>
               </div>
             </form>
           </div>
@@ -139,10 +119,6 @@
       <ul class="job-listings mb-5">
         <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
           <a href="job-single.html"></a>
-          <div class="job-listing-logo">
-            <img src="images/job_logo_1.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid">
-          </div>
-
           <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
             <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
               <h2>Product Designer</h2>
@@ -150,18 +126,18 @@
             </div>
             <div class="job-listing-location mb-3 mb-sm-0 custom-width w-25">
               <span class="icon-room"></span> New York, New York
+              <br>
+              <i class="fa fa-eur" aria-hidden="true"></i> 1000
             </div>
             <div class="job-listing-meta">
-              <span class="badge badge-danger">Part Time</span>
+              <span class="badge badge-danger">Μερική Απασχόληση</span>
+              <span class="badge badge-danger" style="background-color: red;">New</span>
             </div>
           </div>
 
         </li>
         <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
           <a href="job-single.html"></a>
-          <div class="job-listing-logo">
-            <img src="images/job_logo_2.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid">
-          </div>
 
           <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
             <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
@@ -170,18 +146,18 @@
             </div>
             <div class="job-listing-location mb-3 mb-sm-0 custom-width w-25">
               <span class="icon-room"></span> Overland Park, Kansas
+              <br>
+              <i class="fa fa-eur" aria-hidden="true"></i> 950
             </div>
             <div class="job-listing-meta">
-              <span class="badge badge-success">Full Time</span>
+              <span class="badge badge-success">Πλήρη Απασχόληση</span>
+              <span class="badge badge-danger" style="background-color: red;">New</span>
             </div>
           </div>
         </li>
 
         <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
           <a href="job-single.html"></a>
-          <div class="job-listing-logo">
-            <img src="images/job_logo_3.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid">
-          </div>
 
           <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
             <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
@@ -190,18 +166,18 @@
             </div>
             <div class="job-listing-location mb-3 mb-sm-0 custom-width w-25">
               <span class="icon-room"></span> Overland Park, Kansas
+              <br>
+              <i class="fa fa-eur" aria-hidden="true"></i> 673
             </div>
             <div class="job-listing-meta">
-              <span class="badge badge-success">Full Time</span>
+              <span class="badge badge-success">Πλήρη Απασχόληση</span>
+              <span class="badge badge-danger" style="background-color: red;">New</span>
             </div>
           </div>
         </li>
 
         <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
           <a href="job-single.html"></a>
-          <div class="job-listing-logo">
-            <img src="images/job_logo_4.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid">
-          </div>
 
           <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
             <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
@@ -210,18 +186,18 @@
             </div>
             <div class="job-listing-location mb-3 mb-sm-0 custom-width w-25">
               <span class="icon-room"></span> Anywhere
+              <br>
+              <i class="fa fa-eur" aria-hidden="true"></i> 2400
             </div>
             <div class="job-listing-meta">
-              <span class="badge badge-success">Full Time</span>
+              <span class="badge badge-success">Πλήρη Απασχόληση</span>
+              <span class="badge badge-danger" style="background-color: red;">New</span>
             </div>
           </div>
         </li>
 
         <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
           <a href="job-single.html"></a>
-          <div class="job-listing-logo">
-            <img src="images/job_logo_5.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid">
-          </div>
 
           <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
             <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
@@ -230,70 +206,19 @@
             </div>
             <div class="job-listing-location mb-3 mb-sm-0 custom-width w-25">
               <span class="icon-room"></span> San Mateo, CA
+              <br>
+              <i class="fa fa-eur" aria-hidden="true"></i> 1100
             </div>
             <div class="job-listing-meta">
-              <span class="badge badge-success">Full Time</span>
+              <span class="badge badge-success">Πλήρη Απασχόληση</span>
+              <span class="badge badge-danger" style="background-color: red;">New</span>
             </div>
           </div>
         </li>
-        <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-          <a href="job-single.html"></a>
-          <div class="job-listing-logo">
-            <img src="images/job_logo_1.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid">
-          </div>
-
-          <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
-            <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
-              <h2>Product Designer</h2>
-              <strong>Adidas</strong>
-            </div>
-            <div class="job-listing-location mb-3 mb-sm-0 custom-width w-25">
-              <span class="icon-room"></span> New York, New York
-            </div>
-            <div class="job-listing-meta">
-              <span class="badge badge-danger">Part Time</span>
-            </div>
-          </div>
-
-        </li>
-        <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-          <a href="job-single.html"></a>
-          <div class="job-listing-logo">
-            <img src="images/job_logo_2.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid">
-          </div>
-
-          <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
-            <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
-              <h2>Digital Marketing Director</h2>
-              <strong>Sprint</strong>
-            </div>
-            <div class="job-listing-location mb-3 mb-sm-0 custom-width w-25">
-              <span class="icon-room"></span> Overland Park, Kansas
-            </div>
-            <div class="job-listing-meta">
-              <span class="badge badge-success">Full Time</span>
-            </div>
-          </div>
-        </li>
-
       </ul>
 
       <div class="all-positions-div">
         <a href="search.php" style="text-decoration: none;"><button type="submit" class="all-positions">Όλες οι θέσεις</button> </a>
-        <div class="row pagination-wrap page-selector">
-          <div class="col-md-6 text-center text-md-right inner-page-selector">
-            <div class="custom-pagination ml-auto">
-              <a href="#" class="prev">Προηγούμενη</a>
-              <div class="d-inline-block">
-                <a href="#" class="active">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-              </div>
-              <a href="#" class="next">Επόμενη</a>
-            </div>
-          </div>
-        </div>
       </div>
 
   </div>

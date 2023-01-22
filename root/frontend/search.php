@@ -139,7 +139,7 @@
                         </div>
                         <form method="post" class="search-jobs-form">
                             <div class="row mb-5" style="justify-content: space-between; flex-wrap: nowrap">
-                                <input type="text" class="form-control form-control-lg" style="width: 75%; height: 50px" placeholder="Τίτλος εργασίας, Εταιρία...">
+                                <input type="text" class="form-control form-control-lg" style="width: 75%; height: 50px" placeholder="Τίτλος θέσης απασχόλησης...">
                                 <button type="submit" class="btn btn-primary btn-lg btn-block btn-search search-button" style="width: 20%; height: 50px"><span class="icon-search icon mr-2"></span>Αναζήτηση</button>
                             </div>
                         </form>
@@ -157,6 +157,7 @@
                         <h6>Περιφέρεια</h6>
                         <form method="post" style="margin-right:50px">
                             <select class="selectpicker" data-style="btn-white btn-lg" data-width="200px" data-live-search="true" title="Επέλεξε Περιφέρεια" style="justify-items: center;">
+                                <option>Επέλεξε Περιφέρεια</option>
                                 <option>Αττική</option>
                                 <option>Θεσσαλία</option>
                                 <option>Πελοπόννησος</option>
@@ -198,12 +199,26 @@
                             </div>
                     </div>
                     <div class="filter_box">
+                        <h6>Ημερομηνία έναρξης</h6>
+                        <input type="date" id="start" name="trip-start" value="2023-03-01" min="2023-01-23" max="2026-01-01">
+                    </div>
+                    <div class="filter_box">
                         <h6>Διάρκεια</h6>
                         <input type="number" id="duration" name="duration" min="1" max="12" placeholder="Μήνες"></input>
                     </div>
                     <div class="filter_box">
                         <h6>Μηνιαίος Μισθός</h6>
                         <input type="number" id="salary" name="salary" min="0" max="100000" placeholder="€" data-type="currency"></input>
+                    </div>
+                    <div class="filter_box">
+                        <h6>Τμήμα Θέσης</h6>
+                        <select class="selectpicker" data-style="btn-white btn-lg" data-width="200px" data-live-search="true" title="Επέλεξε Τμήμα" style="justify-items: center;">
+                            <option value="Επιλέξτε Τμήμα">Επιλέξτε Τμήμα</option>
+                            <option value="Τμήμα Πληροφορικής και Τηλεπικοινωνιών">Τμήμα Πληροφορικής και Τηλεπικοινωνιών</option>
+                            <option value="Τμήμα Φυσικής">Τμήμα Φυσικής</option>
+                            <option value="Τμήμα Χημείας">Τμήμα Χημείας</option>
+                            <option value="Τμήμα Μαθηματικών">Τμήμα Μαθηματικών</option>
+                        </select>
                     </div>
                     <button type="submit" class="btn btn-primary" style="width: 100%; margin: 0; margin-top: 10px">Εφαρμογή</button>
                 </div>
