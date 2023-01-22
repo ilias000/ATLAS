@@ -1,15 +1,15 @@
 <!doctype html>
 <html lang="en">
   <head>
-
+    
     <title>Jobs Description</title>
     <link rel="icon" type="image/ico" href="images/favicon.ico">
-  
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-  
+    
     <link rel="stylesheet" href="css/custom-bs.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/bootstrap-select.min.css">
@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body id="top">
+
 
   <div id="overlayer"></div>
   <div class="loader">
@@ -105,7 +106,7 @@
                 <div>
                   <span class="ml-0 mr-2 mb-2"><span class="icon-briefcase mr-2 job-description-icon"><span class="company-name">Puma</span>
                   <span class="m-2"><span class="icon-room mr-2"></span>Αθήνα</span>
-                  <span class="m-2"><span class="icon-clock-o mr-2"></span><span class="text-primary">Full Time</span></span>
+                  <span class="m-2"><span class="icon-clock-o mr-2"></span><span class="text-primary">Πλήρης απασχόληση</span></span>
                 </div>
               </div>
             </div>
@@ -125,70 +126,65 @@
           <div class="col-lg-8">
             <div class="mb-5">
               <figure class="mb-5"><img src="images/job_single_img_1.jpg" alt="Image" class="img-fluid rounded"></figure>
-              <h3 class="h5 d-flex align-items-center mb-4 text-primary"><span class="icon-align-left mr-3"></span>Job Description</h3>
-              <p class="job-description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis illum fuga eveniet. Deleniti asperiores, commodi quae ipsum quas est itaque, ipsa, dolore beatae voluptates nemo blanditiis iste eius officia minus.</p>
-              <p class="job-description-text">Velit unde aliquam et voluptas reiciendis non sapiente labore, deleniti asperiores blanditiis nihil quia officiis dolor vero iste dolore vel molestiae saepe. Id nisi, consequuntur sunt impedit quidem, vitae mollitia!</p>
+              <h3 class="h5 d-flex align-items-center mb-4 text-primary"><span class="icon-align-left mr-3"></span>Περιγραφή Θέσης</h3>
+              <p class="job-description-text">Η PUMA SE είναι γερμανική πολυεθνική εταιρεία που σχεδιάζει και κατασκευάζει αθλητικά και άλλα υποδήματα</p>
+              <p class="job-description-text">Αναζητούμε έναν Σχεδιαστή Προϊόντος για να ενταχθεί στην ομάδα μας με δεξιότητες προϊόντος, αλληλεπίδρασης και οπτικού σχεδιασμού. Εκτιμούμε τους σχεδιαστές που σκέφτονται σε συστήματα, επιθυμούν να επικυρώσουν τη δουλειά τους με την έρευνα και μπορούν να επικοινωνήσουν αποτελεσματικά τις ιδέες τους σε άλλους. Το ιδανικό άτομο θα ευδοκιμήσει με τη συνεργασία, την ανατροφοδότηση και την καλλιέργεια καλών εργασιακών σχέσεων.</p>
             </div>
             <div class="mb-5 responsibilities">
-              <h3 class="h5 d-flex align-items-center mb-4 text-primary"><span class="icon-rocket mr-3"></span>Responsibilities</h3>
+              <h3 class="h5 d-flex align-items-center mb-4 text-primary"><span class="icon-rocket mr-3"></span>Ευθύνες</h3>
               <ul class="list-unstyled m-0 p-0">
-                <li class="d-flex align-items-start mb-2"><span class="icon-check_circle mr-2 text-muted"></span><span>Necessitatibus quibusdam facilis</span></li>
-                <li class="d-flex align-items-start mb-2"><span class="icon-check_circle mr-2 text-muted"></span><span>Velit unde aliquam et voluptas reiciendis n Velit unde aliquam et voluptas reiciendis non sapiente labore</span></li>
-                <li class="d-flex align-items-start mb-2"><span class="icon-check_circle mr-2 text-muted"></span><span>Commodi quae ipsum quas est itaque</span></li>
-                <li class="d-flex align-items-start mb-2"><span class="icon-check_circle mr-2 text-muted"></span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span></li>
-                <li class="d-flex align-items-start mb-2"><span class="icon-check_circle mr-2 text-muted"></span><span>Deleniti asperiores blanditiis nihil quia officiis dolor</span></li>
+                <li class="d-flex align-items-start mb-2"><span class="icon-check_circle mr-2 text-muted"></span><span>Αναπτύξτε και παραδώστεwireframes & prototypes για να παρουσιάσετε τις ιδέες σας. Αλληλεπιδράστε τακτικά με τους χρήστες και την υπόλοιπη ομάδα προϊόντων και μετατρέψτε τις ιδέες τους σε έννοιες.</span></li>
+                <li class="d-flex align-items-start mb-2"><span class="icon-check_circle mr-2 text-muted"></span><span>Εστιάστε σε αυτό που κάνετε καλύτερα - σχεδιάστε διεπαφές για κινητά και web.</span></li>
+                <li class="d-flex align-items-start mb-2"><span class="icon-check_circle mr-2 text-muted"></span><span>Συνεργαστείτε στενά με την υπόλοιπη ομάδα Σχεδιασμού Προϊόντων για την ανάπτυξη και επέκταση του Συστήματος Σχεδιασμού(hosted in Figma).</span></li>
+                <li class="d-flex align-items-start mb-2"><span class="icon-check_circle mr-2 text-muted"></span><span>Δημιουργήστε journey maps, user maps & user flows.</span></li>
+                <li class="d-flex align-items-start mb-2"><span class="icon-check_circle mr-2 text-muted"></span><span>Λάβετε μέρος σε κριτικές σχεδιασμού και μοιραστείτε τη δουλειά σας με το C-level.</span></li>
               </ul>
             </div>
 
             <div class="mb-5 education">
-              <h3 class="h5 d-flex align-items-center mb-4 text-primary"><span class="icon-book mr-3"></span>Education + Experience</h3>
+              <h3 class="h5 d-flex align-items-center mb-4 text-primary"><span class="icon-book mr-3"></span>Εμπειρία</h3>
               <ul class="list-unstyled m-0 p-0">
-                <li class="d-flex align-items-start mb-2"><span class="icon-check_circle mr-2 text-muted"></span><span>Necessitatibus quibusdam facilis</span></li>
-                <li class="d-flex align-items-start mb-2"><span class="icon-check_circle mr-2 text-muted"></span><span>Velit unde aliquam et voluptas reiciendis non sapiente labore</span></li>
-                <li class="d-flex align-items-start mb-2"><span class="icon-check_circle mr-2 text-muted"></span><span>Commodi quae ipsum quas est itaque</span></li>
-                <li class="d-flex align-items-start mb-2"><span class="icon-check_circle mr-2 text-muted"></span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span></li>
-                <li class="d-flex align-items-start mb-2"><span class="icon-check_circle mr-2 text-muted"></span><span>Deleniti asperiores blanditiis nihil quia officiis dolor</span></li>
+                <li class="d-flex align-items-start mb-2"><span class="icon-check_circle mr-2 text-muted"></span><span>Ένα online portfolio που παρουσιάζει ισχυρή σχεδιαστική δουλειά δημιουργώντας λύσεις σχεδίασης με επίκεντρο τον χρήστη e2e.</span></li>
+                <li class="d-flex align-items-start mb-2"><span class="icon-check_circle mr-2 text-muted"></span><span>Εμπειρία σε κατασκευή πρωτοτύπων υψηλής πιστότητας με εργαλεία όπως Figma, Sketch, Adobe Creative Suite, Framer (ή παρόμοια)</span></li>
+                <li class="d-flex align-items-start mb-2"><span class="icon-check_circle mr-2 text-muted"></span><span>Δυνατότητα δοκιμής πρωτοτύπων σε ερευνητικά εργαλεία όπως το Maze (ή παρόμοια).</span></li>
+                <li class="d-flex align-items-start mb-2"><span class="icon-check_circle mr-2 text-muted"></span><span>Καλές οργανωτικές δεξιότητες, χρονοδιαγράμματα επικοινωνίας και δεξιότητες διαχείρισης ενδιαφερομένων</span></li>
+                <li class="d-flex align-items-start mb-2"><span class="icon-check_circle mr-2 text-muted"></span><span>Εξοικείωση με τη μεθοδολογία Agile & ικανότητα εκτέλεσης με γρήγορο ρυθμό, επαναληπτική διαδικασία σχεδιασμού υψηλής πίεσης.</span></li>
               </ul>
             </div>
 
             <div class="mb-5 ">
-              <h3 class="h5 d-flex align-items-center mb-4 text-primary"><span class="icon-turned_in mr-3"></span>Other Benifits</h3>
+              <h3 class="h5 d-flex align-items-center mb-4 text-primary"><span class="icon-turned_in mr-3"></span>Άλλα Οφέλη</h3>
               <ul class="list-unstyled m-0 p-0 ul-other">
-                <li class="d-flex align-items-start mb-2"><span class="icon-check_circle mr-2 text-muted"></span><span>Necessitatibus quibusdam facilis</span></li>
-                <li class="d-flex align-items-start mb-2"><span class="icon-check_circle mr-2 text-muted"></span><span>Velit unde aliquam et voluptas reiciendis non sapiente labore</span></li>
-                <li class="d-flex align-items-start mb-2"><span class="icon-check_circle mr-2 text-muted"></span><span>Commodi quae ipsum quas est itaque</span></li>
-                <li class="d-flex align-items-start mb-2"><span class="icon-check_circle mr-2 text-muted"></span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span></li>
-                <li class="d-flex align-items-start mb-2"><span class="icon-check_circle mr-2 text-muted"></span><span>Deleniti asperiores blanditiis nihil quia officiis dolor</span></li>
+                <li class="d-flex align-items-start mb-2"><span class="icon-check_circle mr-2 text-muted"></span><span>Ικανοί στη γρήγορη μάθηση σε περιβάλλον με γρήγορο ρυθμό.</span></li>
+                <li class="d-flex align-items-start mb-2"><span class="icon-check_circle mr-2 text-muted"></span><span>Προσανατολισμένος στη λεπτομέρεια</span></li>
               </ul>
             </div>
 
             <div class="row mb-5">
               <div class="col-6">
-                <a href="#" class="btn btn-block btn-light btn-md"><span class="icon-heart-o mr-2 text-danger"></span>Save Job</a>
+                <a href="#" class="btn btn-block btn-light btn-md"><span class="icon-heart-o mr-2 text-danger"></span>Αποθήκευση </a>
               </div>
               <div class="col-6">
-                <a href="#" class="btn btn-block btn-primary btn-md">Apply Now</a>
+                <a href="#" class="btn btn-block btn-primary btn-md">Κάνε Αίτηση</a>
               </div>
             </div>
 
           </div>
           <div class="col-lg-4">
             <div class="bg-light p-3 border rounded mb-4">
-              <h3 class="text-primary  mt-3 h5 pl-3 mb-3 ">Job Summary</h3>
-              <ul class="list-unstyled pl-3 mb-0">
-                <li class="mb-2 job-summary-text"><strong class="text-black">Published on:</strong> April 14, 2019</li>
-                <li class="mb-2 job-summary-text"><strong class="text-black">Vacancy:</strong> 20</li>
-                <li class="mb-2 job-summary-text"><strong class="text-black">Employment Status:</strong> Full-time</li>
-                <li class="mb-2 job-summary-text"><strong class="text-black">Experience:</strong> 2 to 3 year(s)</li>
-                <li class="mb-2 job-summary-text"><strong class="text-black">Job Location:</strong> New ork City</li>
-                <li class="mb-2 job-summary-text"><strong class="text-black">Salary:</strong> $60k - $100k</li>
-                <li class="mb-2 job-summary-text"><strong class="text-black">Gender:</strong> Any</li>
-                <li class="mb-2 job-summary-text"><strong class="text-black">Application Deadline:</strong> April 28, 2019</li>
+              <h3 class="text-primary  mt-3 h5 pl-3 mb-3 ">Περίληψη Εργασίας</h3>
+              <ul class="list-unstyled pl-3 mb-0 text-black">
+                <li class="mb-2 job-summary-text"><strong>Διάρκεια:</strong> 6 Μήνες</li>
+                <li class="mb-2 job-summary-text"><strong>Τύπος Εργασίας:</strong> Πλήρη</li>
+                <li class="mb-2 job-summary-text"><strong>Ημερομηνία Έναρξης:</strong> 05.07.2023</li>
+                <li class="mb-2 job-summary-text"><strong>Μηνιαίος Μισθός:</strong> 800€</li>
+                <li class="mb-2 job-summary-text"><strong>Τμήμα Θέσης:</strong> Ψηφιακών Τεχνών</li>
+                <li class="mb-2 job-summary-text"><strong>Περιφέρεια:</strong> Αττική</li>
               </ul>
             </div>
 
             <div class="bg-light p-3 border rounded">
-              <h3 class="text-primary  mt-3 h5 pl-3 mb-3 ">Share</h3>
+              <h3 class="text-primary  mt-3 h5 pl-3 mb-3 ">Κοινοποιήστε</h3>
               <div class="px-3">
                 <a href="#" class="pt-3 pb-3 pr-3 pl-0"><span class="icon-facebook"></span></a>
                 <a href="#" class="pt-3 pb-3 pr-3 pl-0"><span class="icon-twitter"></span></a>

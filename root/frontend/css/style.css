@@ -446,9 +446,6 @@ h1, h2, h3, h4 {
       padding-top: 3rem;
       padding-bottom: 3rem; } }
 
-.text-black {
-  color: #000 !important; }
-
 .home-section {
   position: relative; }
   .home-section > .container {
@@ -1820,6 +1817,11 @@ select{
   color: #000;
   padding-right: 1rem;
 }
+ul.text-black strong {
+  font-weight: 600;
+  color:#212529; 
+}
+
 .job-summary-text{
   color: #3C6EAD;
   font-weight: 600;
