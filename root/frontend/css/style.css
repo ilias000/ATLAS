@@ -1783,21 +1783,27 @@ select{
   color: black;
 }
 
-/* .list-unstyled, .pl-3{
+/* Job Description */
+
+.company-name{
+  padding-left: 0.8rem;
+  color: #000;
+}
+.job-description-icon{
+  color: #000;
+  padding-right: 1rem;
+}
+.job-summary-text{
+  color: #3C6EAD;
+  font-weight: 600;
+}
+.job-description-text{
+  color: #000;
+}
+.responsibilities-text{
   color: #000;
 }
 
-.mb-5 p{
+.responsibilities, .education, .ul-other span{
   color: #000;
 }
-.ml-0, .mr-2, .mb-2, .m-2{
-  color: #000;
-}
-
-.icon-add, .icon-lock_outline{
-  color: white;
-}
-
-.section-title, .mb-2, p{
-  color: white;
-} */
