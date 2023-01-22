@@ -147,7 +147,7 @@ $user_data = check_login($connection); // If the user is not logged in they will
 
                     <div class="right-cta-menu text-right d-flex aligin-items-center col-6">
                         <div class="ml-auto">
-                            <a href="#" class="profile-button"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
+                            <a href="companyProfile.php" class="profile-button"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
                             <a href="../backend/logout.php" class="btn btn-outline-red border-width-1 d-none d-lg-inline-block" style="right: -50px; position: relative; color:white">Αποσύνδεση</a>
                         </div>
                         <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"><span class="icon-menu h3 m-0 p-0 mt-2"></span></a>
@@ -178,7 +178,7 @@ $user_data = check_login($connection); // If the user is not logged in they will
             <div class="listings">
                 <ul class="job-listings mb-5">
                     <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                        <a href=""></a>
+                        <a></a>
                         <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between align-items-center mx-4">
                             <div class="job-listing-position custom-width mb-3 mb-sm-0" style="width: 20%;">
                                 <h2>StudentFirstName StudentLastName</h2>
@@ -191,15 +191,18 @@ $user_data = check_login($connection); // If the user is not logged in they will
                                 <i class="fa fa-at" aria-hidden="true"></i> student@mail.com
                                 <br>
                                 <i class="fa fa-phone" aria-hidden="true"></i> +30 0000000000
+                                <br>
+                                <i class="fa fa-file" aria-hidden="true"></i>
+                                <span style="text-decoration: underline; margin-left: 5px"> transcript.pdf</span>
                             </div>
-                            <button href="#" class="btn btn-outline-red btn-sm post-btn">Απόρριψη</button>
+                            <button href="rejection.php" class="btn btn-outline-red btn-sm post-btn">Απόρριψη</button>
                             <button onclick="window.location.href='edit-job.php'" class="btn btn-outline-green btn-sm preview-btn">Αποδοχή</button>
 
                         </div>
 
                     </li>
                     <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                        <a href="#"></a>
+                        <a></a>
                         <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between align-items-center mx-4">
                             <div class="job-listing-position custom-width mb-3 mb-sm-0" style="width: 20%;">
                                 <h2>StudentFirstName StudentLastName</h2>
@@ -212,15 +215,18 @@ $user_data = check_login($connection); // If the user is not logged in they will
                                 <i class="fa fa-at" aria-hidden="true"></i> student@mail.com
                                 <br>
                                 <i class="fa fa-phone" aria-hidden="true"></i> +30 0000000000
+                                <br>
+                                <i class="fa fa-file" aria-hidden="true"></i>
+                                <span style="text-decoration: underline; margin-left: 5px"> transcript.pdf</span>
                             </div>
-                            <button href="#" class="btn btn-outline-red btn-sm post-btn">Απόρριψη</button>
+                            <button href="rejection.php" class="btn btn-outline-red btn-sm post-btn">Απόρριψη</button>
                             <button onclick="window.location.href='edit-job.php'" class="btn btn-outline-green btn-sm preview-btn">Αποδοχή</button>
 
                         </div>
 
                     </li>
                     <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                        <a href="#"></a>
+                        <a></a>
                         <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between align-items-center mx-4">
                             <div class="job-listing-position custom-width mb-3 mb-sm-0" style="width: 20%;">
                                 <h2>StudentFirstName StudentLastName</h2>
@@ -233,15 +239,18 @@ $user_data = check_login($connection); // If the user is not logged in they will
                                 <i class="fa fa-at" aria-hidden="true"></i> student@mail.com
                                 <br>
                                 <i class="fa fa-phone" aria-hidden="true"></i> +30 0000000000
+                                <br>
+                                <i class="fa fa-file" aria-hidden="true"></i>
+                                <span style="text-decoration: underline; margin-left: 5px"> transcript.pdf</span>
                             </div>
-                            <button href="#" class="btn btn-outline-red btn-sm post-btn">Απόρριψη</button>
+                            <button href="rejection.php" class="btn btn-outline-red btn-sm post-btn">Απόρριψη</button>
                             <button onclick="window.location.href='edit-job.php'" class="btn btn-outline-green btn-sm preview-btn">Αποδοχή</button>
 
                         </div>
 
                     </li>
                     <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                        <a href="#"></a>
+                        <a></a>
                         <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between align-items-center mx-4">
                             <div class="job-listing-position custom-width mb-3 mb-sm-0" style="width: 20%;">
                                 <h2>StudentFirstName StudentLastName</h2>
@@ -254,15 +263,18 @@ $user_data = check_login($connection); // If the user is not logged in they will
                                 <i class="fa fa-at" aria-hidden="true"></i> student@mail.com
                                 <br>
                                 <i class="fa fa-phone" aria-hidden="true"></i> +30 0000000000
+                                <br>
+                                <i class="fa fa-file" aria-hidden="true"></i>
+                                <span style="text-decoration: underline; margin-left: 5px"> transcript.pdf</span>
                             </div>
-                            <button href="#" class="btn btn-outline-red btn-sm post-btn">Απόρριψη</button>
+                            <button href="rejection.php" class="btn btn-outline-red btn-sm post-btn">Απόρριψη</button>
                             <button onclick="window.location.href='edit-job.php'" class="btn btn-outline-green btn-sm preview-btn">Αποδοχή</button>
 
                         </div>
 
                     </li>
                     <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                        <a href="#"></a>
+                        <a></a>
                         <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between align-items-center mx-4">
                             <div class="job-listing-position custom-width mb-3 mb-sm-0" style="width: 20%;">
                                 <h2>StudentFirstName StudentLastName</h2>
@@ -275,8 +287,11 @@ $user_data = check_login($connection); // If the user is not logged in they will
                                 <i class="fa fa-at" aria-hidden="true"></i> student@mail.com
                                 <br>
                                 <i class="fa fa-phone" aria-hidden="true"></i> +30 0000000000
+                                <br>
+                                <i class="fa fa-file" aria-hidden="true"></i>
+                                <span style="text-decoration: underline; margin-left: 5px"> transcript.pdf</span>
                             </div>
-                            <button href="#" class="btn btn-outline-red btn-sm post-btn">Απόρριψη</button>
+                            <button href="rejection.php" class="btn btn-outline-red btn-sm post-btn">Απόρριψη</button>
                             <button onclick="window.location.href='edit-job.php'" class="btn btn-outline-green btn-sm preview-btn">Αποδοχή</button>
 
                         </div>
