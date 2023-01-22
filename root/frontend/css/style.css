@@ -956,6 +956,15 @@ h1, h2, h3, h4 {
     background: #fff;
     color: #000; }
 
+.btn.btn-outline-red {
+  background: transparent;
+  border-width: 2px;
+  border-color: rgb(194, 62, 62);
+  color: rgb(0, 0, 0); }
+  .btn.btn-outline-red:hover {
+    background: rgb(194, 62, 62);
+    color: #fff; }
+
 .btn.btn-outline-primary {
   color: #3C6EAD; }
   .btn.btn-outline-primary:hover {
@@ -1804,23 +1813,5 @@ select{
 
 .company-name{
   padding-left: 0.8rem;
-  color: #000;
-}
-.job-description-icon{
-  color: #000;
-  padding-right: 1rem;
-}
-.job-summary-text{
-  color: #3C6EAD;
-  font-weight: 600;
-}
-.job-description-text{
-  color: #000;
-}
-.responsibilities-text{
-  color: #000;
-}
-
-.responsibilities, .education, .ul-other span{
   color: #000;
 }

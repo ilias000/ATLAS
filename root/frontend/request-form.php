@@ -113,73 +113,33 @@
         </div>
     </section>
 
-    <section class="site-section" style="height: 1000px; color:black">
-        <div style="display: flex; justify-content:space-between">
-            <div class="job-description">
-                <h3>Τίτλος Θέσης</h3>
-                <h3>Πλήρης περιγραφή θέσης</h3>
-                <p>Η Fortunet Hellas είναι μια εταιρεία με έδρα την Αθήνα.
-                    Αναζητούμε έναν Μηχανικό Λογισμικού (Software engineer) για να εργαστεί στην ανάπτυξη και την αρχιτεκτονική των προϊόντων μας. Η πλατφόρμα ανάπτυξης είναι C# .Net core, Entity Framework core, APIs, SqlServer.
+    <section class="site-section" style="height: 1000px;">
+        <form method="POST" class="p-4 border rounded" style="height: 100%; color:black">
+            <label for="first_name">Όνομα</label>
+            <input type="text" name="first_name" placeholder="Όνομα" required oninvalid="this.setCustomValidity('Παρακαλώ εισάγετε ένα όνομα')" oninput="this.setCustomValidity('')"><br>
+            <label for="last_name">Επίθετο</label>
+            <input type="text" name="last_name" placeholder="Επίθετο" required oninvalid="this.setCustomValidity('Παρακαλώ εισάγετε ένα επίθετο')" oninput="this.setCustomValidity('')"><br>
+            <label for="email">Email</label>
+            <input type=" email" name="email" placeholder="Email" required oninvalid="this.setCustomValidity('Παρακαλώ εισάγετε ένα email')" oninput="this.setCustomValidity('')"><br>
+            <label for="phone">Τηλέφωνο</label>
+            <input type="tel" name="phone" placeholder="Τηλέφωνο" required oninvalid="this.setCustomValidity('Παρακαλώ εισάγετε ένα τηλέφωνο')" oninput="this.setCustomValidity('')"><br>
+            <label for="message">Γιατί ενδιαφερεστε γι' αυτήν την θέση;</label>
+            <textarea name="message" style="width: 97%; height:200px" placeholder="" required oninvalid="this.setCustomValidity('Παρακαλώ εισάγετε την απάντησή σας')" oninput="this.setCustomValidity('')"></textarea><br>
+            <input type="file" id="upload-btn" hidden required oninvalid="this.setCustomValidity('Παρακαλώ ανεβάστε ένα αρχείο')" oninput="this.setCustomValidity('')">
+            <label for="upload-btn" class="upload-btn-label">Επιλογή Αρχείου</label><span id="file-chosen">No file chosen</span><br>
+            <script>
+                const upload_btn = document.getElementById('upload-btn');
+                const fileChosen = document.getElementById('file-chosen');
 
-                    Επιθυμητές γνώσεις σε JavaScript, jQuery, Ajax και MongoDB.
-
-                    Πρόκειται για μια μοναδική ευκαιρία να μπείτε στο πρώτο επίπεδο μιας ταχέως αναπτυσσόμενης εταιρείας λογισμικού και υπηρεσιών λογισμικού στον χώρο του real estate και να συμμετέχετε στην αρχιτεκτονική και την ανάπτυξη μοναδικών προϊόντων, όπως microservices και full-stack εφαρμογές γύρω από πολλές άλλες εφαρμογές.
-
-                    Καθήκοντα εργασίας
-
-                    - Κατανόηση των επιχειρηματικών αναγκών και σύνδεσή τους με το προϊόν.
-                    - Βελτίωση των υφιστάμενων λειτουργιών και σχεδιασμός νέων λύσεων από το μηδέν.
-                    - Υλοποίηση τόσο front-end όσο και bmodack-end βοηθητικών προγραμμάτων λογισμικού.
-                    - Αποσφαλμάτωση υφιστάμενων εφαρμογών.
-
-                    Απαιτήσεις
-
-                    - Επαγγελματική εμπειρία ως προγραμματιστής λογισμικού στην ανάπτυξη μεγάλων εφαρμογών και APIs με τη χρήση C#.NET Core.
-                    - Καλή κατανόηση της αγγλικής γλώσσας.
-                    - Προσανατολισμός στη λεπτομέρεια με ισχυρή δέσμευση στην ακρίβεια και την ποιότητα.
-                    - Καλή αίσθηση του σχεδιασμού αρχιτεκτονικών back-end και Full-stack με .Net.
-                    - Πτυχίο τίτλου σπουδών στην επιστήμη της πληροφορικής και των υπολογιστών.
-
-                    Τι προσφέρουμε
-
-                    - Εξαιρετικό περιβάλλον εργασίας και υγιείς σχέσεις μεταξύ των εργαζομένων.
-
-                    - Πολύ καλές απολαβές.
-
-                    - Ευκαιρία συμμετοχής σε συνεχώς επιτυχημένων και αναπτυσσόμενων λογισμικών στον χώρο του real estate αλλά και απόκτηση εμπειρίας μέσω ανάπτυξης νέων.
-
-                    - Συνεργασία και αλληλοβοήθεια μεταξύ υπαλλήλων.
-
-                    Είδος Εργασίας: Πλήρης απασχόληση</p>
+                upload_btn.addEventListener('change', function() {
+                    fileChosen.textContent = this.files[0].name
+                })
+            </script>
+            <div style="display: flex; justify-content:space-between">
+                <input type="submit" onclick="return confirm('Θέλετε σίγουρα να κάνετε προσωρινή αποθήκευση της αίτησης?')" name="submit" class="btn px-4 btn-primary text-white" style="width:35%; border-radius: 5px" value="Προσωρινή Αποθήκευση">
+                <input type="submit" onclick="return confirm('Θέλετε σίγουρα να υποβάλλετε την αίτηση οριστικά?')" name="submit" class="btn px-4 btn-outline-red" style="width:35%; border-radius: 5px" value="Οριστική Υποβολή">
             </div>
-
-            <form method="POST" class="p-4 border rounded" style="height: 100%; color:black">
-                <label for="first_name">Όνομα</label>
-                <input type="text" name="first_name" placeholder="Όνομα" required oninvalid="this.setCustomValidity('Παρακαλώ εισάγετε ένα όνομα')" oninput="this.setCustomValidity('')"><br>
-                <label for="last_name">Επίθετο</label>
-                <input type="text" name="last_name" placeholder="Επίθετο" required oninvalid="this.setCustomValidity('Παρακαλώ εισάγετε ένα επίθετο')" oninput="this.setCustomValidity('')"><br>
-                <label for="email">Email</label>
-                <input type=" email" name="email" placeholder="Email" required oninvalid="this.setCustomValidity('Παρακαλώ εισάγετε ένα email')" oninput="this.setCustomValidity('')"><br>
-                <label for="phone">Τηλέφωνο</label>
-                <input type="tel" name="phone" placeholder="Τηλέφωνο" required oninvalid="this.setCustomValidity('Παρακαλώ εισάγετε ένα τηλέφωνο')" oninput="this.setCustomValidity('')"><br>
-                <label for="message">Μήνυμα</label>
-                <textarea name="message" style="width: 97%; height:200px" placeholder="Μήνυμα" required oninvalid="this.setCustomValidity('Παρακαλώ εισάγετε το μήνυμά σας')" oninput="this.setCustomValidity('')"></textarea><br>
-                <input type="file" id="upload-btn" hidden required oninvalid="this.setCustomValidity('Παρακαλώ ανεβάστε ένα αρχείο')" oninput="this.setCustomValidity('')">
-                <label for="upload-btn" class="upload-btn-label">Επιλογή Αρχείου</label><span id="file-chosen">No file chosen</span><br>
-                <script>
-                    const upload_btn = document.getElementById('upload-btn');
-                    const fileChosen = document.getElementById('file-chosen');
-
-                    upload_btn.addEventListener('change', function() {
-                        fileChosen.textContent = this.files[0].name
-                    })
-                </script>
-                <div style="display: flex; justify-content:space-between">
-                    <input type="submit" name="submit" class="btn px-4 btn-primary text-white" style="width:35%; border-radius: 5px" value="Προσωρινή Αποθήκευση">
-                    <input type="submit" name="submit" class="btn px-4 btn-primary text-white" style="width:35%; border-radius: 5px" value="Οριστική Υποβολή">
-                </div>
-            </form>
-        </div>
+        </form>
     </section>
 </div>
 
