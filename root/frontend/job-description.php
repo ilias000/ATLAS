@@ -1,27 +1,56 @@
+<?php
+session_start();
+
+include("../backend/connection.php");
+include("../backend/functions.php");
+
+if ((isset($_GET['loggedIn'])) && (!strcmp($_GET['loggedIn'], "true"))) {
+  $user_data = check_login($connection); // If the user is not logged in they will be redirected to the loginSignup page else the user_data variable will contain their information.
+}
+?>
+
 <!doctype html>
 <html lang="en">
-  <head>
-    
-    <title>Jobs Description</title>
-    <link rel="icon" type="image/ico" href="images/favicon.ico">
-    
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    
-    <link rel="stylesheet" href="css/custom-bs.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="css/bootstrap-select.min.css">
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
-    <link rel="stylesheet" href="fonts/line-icons/style.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-  
-    <!-- MAIN CSS -->
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body id="top">
+
+<style>
+  .profile-button {
+    position: relative;
+    top: 10px;
+    right: -20px;
+    color: white;
+    font-size: 2.5em;
+  }
+
+  .profile-button:hover {
+    color: #A3C8FF;
+    text-decoration: none;
+  }
+</style>
+
+<head>
+
+  <title>Περιγραφή Θέσης</title>
+  <link rel="icon" type="image/ico" href="images/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+  <link rel="stylesheet" href="css/custom-bs.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="fonts/line-icons/style.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="top">
 
 
   <div id="overlayer"></div>
@@ -30,9 +59,9 @@
       <span class="sr-only">Loading...</span>
     </div>
   </div>
-    
 
-<div class="site-wrap">
+
+  <div class="site-wrap">
 
     <div class="site-mobile-menu site-navbar-target">
       <div class="site-mobile-menu-header">
@@ -42,39 +71,71 @@
       </div>
       <div class="site-mobile-menu-body"></div>
     </div> <!-- .site-mobile-menu -->
-    
+
 
     <!-- NAVBAR -->
-    <header class="site-navbar mt-3">
-      <div class="container-fluid">
-        <div class="row align-items-center">
-          <div class="site-logo col-6"><a href="index.php">ΑΤΛΑΣ</a></div>
+    <?php
+    if ((isset($_GET['loggedIn'])) && (!strcmp($_GET['loggedIn'], "true"))) { ?>
+      <header class="site-navbar">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="site-logo col-6"><a href="index.php">ΑΤΛΑΣ</a></div>
 
-          <nav class="mx-auto site-navigation">
-            <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
-              <li><a href="search.php">Αναζήτηση Θέσης</a></li>
-              <li class="has-children">
-                <a href="#">Βοήθεια</a>
-                <ul class="dropdown">
-                  <li><a href="./faqStudent.html">Είμαι Φοιτητής/ια</a></li>
-                  <li><a href="./faqCompany.html">Είμαι Φορέας Υποδοχής</a></li>
-                </ul>
-              </li>
-              <li><a href="contact.php">Επικοινωνία</a></li>
-            </ul>
-          </nav>
+            <nav class="mx-auto site-navigation">
+              <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
+                <li><a href="student.php">Αναζήτηση Θέσης</a></li>
+                <li><a href="savedJobs.php">Αγαπημένα</a></li>
+                <li><a href="search.php">Αιτήσεις</a></li>
+                <li><a href="faqStudent.html">Βοήθεια</a></li>
+                <li><a href="contact.php">Επικοινωνία</a></li>
+              </ul>
+            </nav>
 
-          <div class="right-cta-menu text-right d-flex aligin-items-center col-6">
-            <div class="ml-auto">
-              <a href="post-job.php" class="btn btn-outline-white border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-add"></span>Δημιουργία Θέσης</a>
-              <a href="loginSignup.php" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Είσοδος/Εγγραφή</a>
+            <div class="right-cta-menu text-right d-flex aligin-items-center col-6">
+              <div class="ml-auto">
+                <a href="#" class="profile-button"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
+                <a href="../backend/logout.php" class="btn btn-outline-red border-width-1 d-none d-lg-inline-block" style="right: -50px; position: relative; color:white">Αποσύνδεση</a>
+              </div>
+              <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"><span class="icon-menu h3 m-0 p-0 mt-2"></span></a>
             </div>
-            <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"><span class="icon-menu h3 m-0 p-0 mt-2"></span></a>
           </div>
-
         </div>
-      </div>
-    </header>
+      </header>
+    <?php
+    } else { ?>
+      <header class="site-navbar mt-3">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="site-logo col-6"><a href="index.php">ΑΤΛΑΣ</a></div>
+
+            <nav class="mx-auto site-navigation">
+              <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
+                <li><a href="search.php">Αναζήτηση Θέσης</a></li>
+                <li class="has-children">
+                  <a href="#">Βοήθεια</a>
+                  <ul class="dropdown">
+                    <li><a href="./faqStudent.html">Είμαι Φοιτητής/τρια</a></li>
+                    <li><a href="./faqCompany.html">Είμαι Φορέας Υποδοχής</a></li>
+                  </ul>
+                </li>
+                <li><a href="contact.php">Επικοινωνία</a></li>
+              </ul>
+            </nav>
+
+            <div class="right-cta-menu text-right d-flex aligin-items-center col-6">
+              <div class="ml-auto">
+                <a href="loginSignup.php?to=post-job.php&user_type=company" class="btn btn-outline-white border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-add"></span>Δημιουργία Θέσης</a>
+                <a href="loginSignup.php" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Είσοδος/Εγγραφή</a>
+              </div>
+              <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"><span class="icon-menu h3 m-0 p-0 mt-2"></span></a>
+            </div>
+
+          </div>
+        </div>
+      </header>
+    <?php
+    }
+    ?>
 
     <!-- HOME -->
     <section class="section-hero overlay inner-page bg-image" style="background-image: url('images/hero_1.jpg');" id="home-section">
@@ -83,16 +144,16 @@
           <div class="col-md-7">
             <h1 class="text-white font-weight-bold">Περιγραφή Θέσης</h1>
             <div class="custom-breadcrumbs">
-              <a href="#">Αρχική</a> <span class="mx-2 slash">/</span>
-              <a href="#">Περιγραφή Θέσης</a> <span class="mx-2 slash">/</span>
-              <span class="text-white"><strong>Product Designer</strong></span>
+              <a href="index.php">Αρχική</a> <span class="mx-2 slash">/</span>
+              <a href="search.php">Αναζήτηση Θέσης</a> <span class="mx-2 slash">/</span>
+              <span class="text-white"><strong>Περιγραφή Θέσης</strong></span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    
+
     <section class="site-section">
       <div class="container">
         <div class="row align-items-center mb-5">
@@ -105,8 +166,8 @@
                 <h2>Product Designer</h2>
                 <div>
                   <span class="ml-0 mr-2 mb-2"><span class="icon-briefcase mr-2 job-description-icon"><span class="company-name">Puma</span>
-                  <span class="m-2"><span class="icon-room mr-2"></span>Αθήνα</span>
-                  <span class="m-2"><span class="icon-clock-o mr-2"></span><span class="text-primary">Πλήρης απασχόληση</span></span>
+                      <span class="m-2"><span class="icon-room mr-2"></span>Αθήνα</span>
+                      <span class="m-2"><span class="icon-clock-o mr-2"></span><span class="text-primary">Πλήρης απασχόληση</span></span>
                 </div>
               </div>
             </div>
@@ -117,7 +178,7 @@
                 <a href="#" class="btn btn-block btn-light btn-md"><span class="icon-heart-o mr-2 text-danger"></span>Αγαπημένα</a>
               </div>
               <div class="col-6">
-                <a href="#" class="btn btn-block btn-primary btn-md">Κάνε Αίτηση</a>
+                <a href="request-form.php" class="btn btn-block btn-primary btn-md">Κάνε Αίτηση</a>
               </div>
             </div>
           </div>
@@ -165,7 +226,7 @@
                 <a href="#" class="btn btn-block btn-light btn-md"><span class="icon-heart-o mr-2 text-danger"></span>Αποθήκευση </a>
               </div>
               <div class="col-6">
-                <a href="#" class="btn btn-block btn-primary btn-md">Κάνε Αίτηση</a>
+                <a href="request-form.php" class="btn btn-block btn-primary btn-md">Κάνε Αίτηση</a>
               </div>
             </div>
 
@@ -198,7 +259,7 @@
       </div>
     </section>
 
-    <footer>
+    <footer style="margin-bottom: 30px;">
       <table style="margin: 0 auto 0 auto;">
         <tr>
           <td><a href="http://minedu.gov.gr/" target="_blank"><img src="images/footer1.png" alt="Υπουργείο Παιδείας και Θρησκευμάτων" height="60"></a></td>
@@ -206,25 +267,26 @@
         </tr>
       </table>
     </footer>
-  
+
   </div>
 
-    <!-- SCRIPTS -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/stickyfill.min.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.animateNumber.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    
-    <script src="js/bootstrap-select.min.js"></script>
-    
-    <script src="js/custom.js"></script>
+  <!-- SCRIPTS -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/stickyfill.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
 
-     
-  </body>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+
+  <script src="js/bootstrap-select.min.js"></script>
+
+  <script src="js/custom.js"></script>
+
+
+</body>
+
 </html>

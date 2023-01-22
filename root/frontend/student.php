@@ -127,7 +127,7 @@ $user_data = check_login($connection); // If the user is not logged in they will
                         <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
                             <li><a href="student.php">Αναζήτηση Θέσης</a></li>
                             <li><a href="savedJobs.php">Αγαπημένα</a></li>
-                            <li><a href="search.php">Αιτήσεις</a></li>
+                            <li><a href="a.php">Αιτήσεις</a></li>
                             <li><a href="faqStudent.html">Βοήθεια</a></li>
                             <li><a href="contact.php">Επικοινωνία</a></li>
                         </ul>
@@ -245,7 +245,7 @@ $user_data = check_login($connection); // If the user is not logged in they will
                 <div class="listings">
                     <ul class="job-listings mb-5">
                         <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                            <a href="job-description.php"></a>
+                            <a href="job-description.php?loggedIn=true"></a>
                             <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
                                 <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
                                     <h2>Product Designer</h2>
@@ -263,7 +263,7 @@ $user_data = check_login($connection); // If the user is not logged in they will
 
                         </li>
                         <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                            <a href="job-description.php"></a>
+                            <a href="job-description.php?loggedIn=true"></a>
 
                             <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
                                 <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
@@ -282,7 +282,7 @@ $user_data = check_login($connection); // If the user is not logged in they will
                         </li>
 
                         <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                            <a href="job-description.php"></a>
+                            <a href="job-description.php?loggedIn=true"></a>
 
                             <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
                                 <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
@@ -301,7 +301,7 @@ $user_data = check_login($connection); // If the user is not logged in they will
                         </li>
 
                         <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                            <a href="job-description.php"></a>
+                            <a href="job-description.php?loggedIn=true"></a>
 
                             <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
                                 <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
@@ -320,7 +320,7 @@ $user_data = check_login($connection); // If the user is not logged in they will
                         </li>
 
                         <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                            <a href="job-description.php"></a>
+                            <a href="job-description.php?loggedIn=true"></a>
 
                             <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
                                 <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
@@ -338,7 +338,7 @@ $user_data = check_login($connection); // If the user is not logged in they will
                             </div>
                         </li>
                         <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                            <a href="job-description.php"></a>
+                            <a href="job-description.php?loggedIn=true"></a>
 
                             <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
                                 <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
@@ -357,7 +357,7 @@ $user_data = check_login($connection); // If the user is not logged in they will
 
                         </li>
                         <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                            <a href="job-description.php"></a>
+                            <a href="job-description.php?loggedIn=true"></a>
 
                             <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
                                 <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">

@@ -122,15 +122,15 @@
 
     <section class="site-section" style="height: 1000px;">
         <form method="POST" class="p-4 border rounded" action="student.php" style="height: 100%; color:black">
-            <label for="first_name">Όνομα</label>
+            <label for="first_name">Όνομα</label><br>
             <input type="text" name="first_name" placeholder="Όνομα" required oninvalid="this.setCustomValidity('Παρακαλώ εισάγετε ένα όνομα')" oninput="this.setCustomValidity('')"><br>
-            <label for="last_name">Επίθετο</label>
+            <label for="last_name">Επίθετο</label><br>
             <input type="text" name="last_name" placeholder="Επίθετο" required oninvalid="this.setCustomValidity('Παρακαλώ εισάγετε ένα επίθετο')" oninput="this.setCustomValidity('')"><br>
-            <label for="email">Email</label>
+            <label for="email">Email</label><br>
             <input type=" email" name="email" placeholder="Email" required oninvalid="this.setCustomValidity('Παρακαλώ εισάγετε ένα email')" oninput="this.setCustomValidity('')"><br>
-            <label for="phone">Τηλέφωνο</label>
+            <label for="phone">Τηλέφωνο</label><br>
             <input type="tel" name="phone" placeholder="Τηλέφωνο" required oninvalid="this.setCustomValidity('Παρακαλώ εισάγετε ένα τηλέφωνο')" oninput="this.setCustomValidity('')"><br>
-            <label for="message">Γιατί ενδιαφερεστε γι' αυτήν την θέση;</label>
+            <label for="message">Γιατί ενδιαφερεστε γι' αυτήν την θέση;</label><br>
             <textarea name="message" style="width: 97%; height:200px" placeholder="" required oninvalid="this.setCustomValidity('Παρακαλώ εισάγετε την απάντησή σας')" oninput="this.setCustomValidity('')"></textarea><br>
             <input type="file" id="upload-btn" hidden required oninvalid="this.setCustomValidity('Παρακαλώ ανεβάστε ένα αρχείο')" oninput="this.setCustomValidity('')">
             <label for="upload-btn" class="upload-btn-label">Επιλογή Αρχείου</label><span id="file-chosen">No file chosen</span><br>

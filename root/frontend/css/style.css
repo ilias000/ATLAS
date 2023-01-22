@@ -962,6 +962,15 @@ h1, h2, h3, h4 {
     background: rgb(194, 62, 62);
     color: #fff; }
 
+.btn.btn-outline-green {
+  background: transparent;
+  border-width: 2px;
+  border-color: #338d54;
+  color: rgb(0, 0, 0); }
+  .btn.btn-outline-green:hover {
+    background: #338d54;
+    color: #fff; }
+
 .btn.btn-outline-primary {
   color: #3C6EAD; }
   .btn.btn-outline-primary:hover {
@@ -1781,7 +1790,7 @@ select{
 }
 
 .job-listing {
-  height: 150px !important;
+  height: 150px;
   width: 100%;
 }
 

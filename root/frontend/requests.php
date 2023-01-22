@@ -75,7 +75,7 @@ $user_data = check_login($connection); // If the user is not logged in they will
         text-decoration: none;
     }
 
-    .btn.btn-primary.btn-sm.preview-btn {
+    .btn.btn-outline-green.btn-sm.preview-btn {
         position: absolute;
         right: 10px;
         bottom: 10px;
@@ -89,7 +89,7 @@ $user_data = check_login($connection); // If the user is not logged in they will
 </style>
 
 <head>
-    <title>Αναζήτηση Θέσης</title>
+    <title>Αιτήσεις</title>
     <link rel="icon" type="image/ico" href="images/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -161,11 +161,11 @@ $user_data = check_login($connection); // If the user is not logged in they will
                 <div class="row align-items-center justify-content-center">
                     <div class="col-md-12" style="margin-top:80px">
                         <div class="mb-5 text-left">
-                            <h1 class="text-white font-weight-bold">Ενεργές Θέσεις</h1>
+                            <h1 class="text-white font-weight-bold">Αιτήσεις</h1>
                             <div class="custom-breadcrumbs">
                                 <a href="index.php">Αρχική</a> <span class="mx-2 slash">/</span>
                                 <a href="loginSignup.php">Είσοδος</a> <span class="mx-2 slash">/</span>
-                                <span class="text-white"><strong>Ενεργές Θέσεις</strong></span>
+                                <span class="text-white"><strong>Αιτήσεις</strong></span>
                             </div>
                         </div>
                     </div>
@@ -178,125 +178,109 @@ $user_data = check_login($connection); // If the user is not logged in they will
             <div class="listings">
                 <ul class="job-listings mb-5">
                     <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                        <a href="job-description.php"></a>
+                        <a href=""></a>
                         <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between align-items-center mx-4">
                             <div class="job-listing-position custom-width mb-3 mb-sm-0" style="width: 20%;">
-                                <h2>Product Designer</h2>
-                                <strong>Adidas</strong>
+                                <h2>StudentFirstName StudentLastName</h2>
+                                <strong>University</strong>
                             </div>
                             <div class="filter_box">
-                                <span>Κατάσταση Αγγελίας: </span>
-                                <span style="color: green">Οριστική Υποβολή</span>
+                                <span>StudentText</span>
                             </div>
                             <div class="job-listing-location mb-3 mb-sm-0 custom-width w-25">
-                                <span class="icon-room"></span> New York, New York
+                                <i class="fa fa-at" aria-hidden="true"></i> student@mail.com
                                 <br>
-                                <i class="fa fa-eur" aria-hidden="true"></i> 1000
+                                <i class="fa fa-phone" aria-hidden="true"></i> +30 0000000000
                             </div>
-                            <button onclick="window.location.href='job-description.php'" class="btn btn-primary btn-sm preview-btn">Προεπισκόπηση</button>
-                            <div class="job-listing-meta">
-                                <span class="badge badge-danger">Μερική Απασχόληση</span>
-                            </div>
+                            <button href="#" class="btn btn-outline-red btn-sm post-btn">Απόρριψη</button>
+                            <button onclick="window.location.href='edit-job.php'" class="btn btn-outline-green btn-sm preview-btn">Αποδοχή</button>
 
                         </div>
 
                     </li>
                     <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                        <a href="job-description.php"></a>
-
-                        <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
+                        <a href="#"></a>
+                        <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between align-items-center mx-4">
                             <div class="job-listing-position custom-width mb-3 mb-sm-0" style="width: 20%;">
-                                <h2>Digital Marketing Director</h2>
-                                <strong>Adidas</strong>
+                                <h2>StudentFirstName StudentLastName</h2>
+                                <strong>University</strong>
                             </div>
                             <div class="filter_box">
-                                <span>Κατάσταση Αγγελίας: </span>
-                                <span style="color: grey">Προσωρινά αποθηκευμένη</span>
+                                <span>StudentText</span>
                             </div>
                             <div class="job-listing-location mb-3 mb-sm-0 custom-width w-25">
-                                <span class="icon-room"></span> Overland Park, Kansas
+                                <i class="fa fa-at" aria-hidden="true"></i> student@mail.com
                                 <br>
-                                <i class="fa fa-eur" aria-hidden="true"></i> 950
+                                <i class="fa fa-phone" aria-hidden="true"></i> +30 0000000000
                             </div>
-                            <button href="#" class="btn btn-outline-red btn-sm post-btn">Οριστική Υποβολή</button>
-                            <button onclick="window.location.href='edit-job.php'" class="btn btn-primary btn-sm preview-btn">Επεξεργασία</button>
-                            <div class="job-listing-meta">
-                                <span class="badge badge-success">Πλήρη Απασχόληση</span>
-                            </div>
+                            <button href="#" class="btn btn-outline-red btn-sm post-btn">Απόρριψη</button>
+                            <button onclick="window.location.href='edit-job.php'" class="btn btn-outline-green btn-sm preview-btn">Αποδοχή</button>
+
                         </div>
+
                     </li>
-
                     <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                        <a href="job-description.php"></a>
-
-                        <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
+                        <a href="#"></a>
+                        <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between align-items-center mx-4">
                             <div class="job-listing-position custom-width mb-3 mb-sm-0" style="width: 20%;">
-                                <h2>Back-end Engineer (Python)</h2>
-                                <strong>Adidas</strong>
+                                <h2>StudentFirstName StudentLastName</h2>
+                                <strong>University</strong>
                             </div>
                             <div class="filter_box">
-                                <span>Κατάσταση Αγγελίας: </span>
-                                <span style="color: grey">Προσωρινά αποθηκευμένη</span>
+                                <span>StudentText</span>
                             </div>
                             <div class="job-listing-location mb-3 mb-sm-0 custom-width w-25">
-                                <span class="icon-room"></span> Overland Park, Kansas
+                                <i class="fa fa-at" aria-hidden="true"></i> student@mail.com
                                 <br>
-                                <i class="fa fa-eur" aria-hidden="true"></i> 673
+                                <i class="fa fa-phone" aria-hidden="true"></i> +30 0000000000
                             </div>
-                            <button href="#" class="btn btn-outline-red btn-sm post-btn">Οριστική Υποβολή</button>
-                            <button onclick="window.location.href='edit-job.php'" class="btn btn-primary btn-sm preview-btn">Επεξεργασία</button>
-                            <div class="job-listing-meta">
-                                <span class="badge badge-success">Πλήρη Απασχόληση</span>
-                            </div>
+                            <button href="#" class="btn btn-outline-red btn-sm post-btn">Απόρριψη</button>
+                            <button onclick="window.location.href='edit-job.php'" class="btn btn-outline-green btn-sm preview-btn">Αποδοχή</button>
+
                         </div>
+
                     </li>
-
                     <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                        <a href="job-description.php"></a>
-
-                        <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
+                        <a href="#"></a>
+                        <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between align-items-center mx-4">
                             <div class="job-listing-position custom-width mb-3 mb-sm-0" style="width: 20%;">
-                                <h2>Senior Art Director</h2>
-                                <strong>Adidas</strong>
+                                <h2>StudentFirstName StudentLastName</h2>
+                                <strong>University</strong>
                             </div>
                             <div class="filter_box">
-                                <span>Κατάσταση Αγγελίας: </span>
-                                <span style="color: green">Οριστική Υποβολή</span>
+                                <span>StudentText</span>
                             </div>
                             <div class="job-listing-location mb-3 mb-sm-0 custom-width w-25">
-                                <span class="icon-room"></span> Anywhere
+                                <i class="fa fa-at" aria-hidden="true"></i> student@mail.com
                                 <br>
-                                <i class="fa fa-eur" aria-hidden="true"></i> 2400
+                                <i class="fa fa-phone" aria-hidden="true"></i> +30 0000000000
                             </div>
-                            <button onclick="window.location.href='job-description.php'" class="btn btn-primary btn-sm preview-btn">Προεπισκόπηση</button>
-                            <div class="job-listing-meta">
-                                <span class="badge badge-success">Πλήρη Απασχόληση</span>
-                            </div>
+                            <button href="#" class="btn btn-outline-red btn-sm post-btn">Απόρριψη</button>
+                            <button onclick="window.location.href='edit-job.php'" class="btn btn-outline-green btn-sm preview-btn">Αποδοχή</button>
+
                         </div>
+
                     </li>
-
                     <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                        <a href="job-description.php"></a>
-
-                        <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
+                        <a href="#"></a>
+                        <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between align-items-center mx-4">
                             <div class="job-listing-position custom-width mb-3 mb-sm-0" style="width: 20%;">
-                                <h2>Product Designer</h2>
-                                <strong>Adidas</strong>
+                                <h2>StudentFirstName StudentLastName</h2>
+                                <strong>University</strong>
                             </div>
                             <div class="filter_box">
-                                <span>Κατάσταση Αγγελίας: </span>
-                                <span style="color: green">Οριστική Υποβολή</span>
+                                <span>StudentText</span>
                             </div>
                             <div class="job-listing-location mb-3 mb-sm-0 custom-width w-25">
-                                <span class="icon-room"></span> San Mateo, CA
+                                <i class="fa fa-at" aria-hidden="true"></i> student@mail.com
                                 <br>
-                                <i class="fa fa-eur" aria-hidden="true"></i> 1100
+                                <i class="fa fa-phone" aria-hidden="true"></i> +30 0000000000
                             </div>
-                            <button onclick="window.location.href='job-description.php'" class="btn btn-primary btn-sm preview-btn">Προεπισκόπηση</button>
-                            <div class="job-listing-meta">
-                                <span class="badge badge-success">Πλήρη Απασχόληση</span>
-                            </div>
+                            <button href="#" class="btn btn-outline-red btn-sm post-btn">Απόρριψη</button>
+                            <button onclick="window.location.href='edit-job.php'" class="btn btn-outline-green btn-sm preview-btn">Αποδοχή</button>
+
                         </div>
+
                     </li>
                 </ul>
                 <div class="all-positions-div" style="justify-content: end;">

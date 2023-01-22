@@ -134,17 +134,17 @@
 
               <div class="form-group">
                 <label for="email">Email</label>
-                <input type="text" class="form-control" id="email" placeholder="company@mail.com">
+                <input type="text" class="form-control" id="email" placeholder="company@mail.com" value="company@mail.com">
               </div>
               <div class="form-group">
                 <label for="job-title">Τίτλος Αγγελίας</label>
-                <input type="text" class="form-control" id="job-title" placeholder="Product Designer">
+                <input type="text" class="form-control" id="job-title" placeholder="Product Designer" value="Product Designer">
               </div>
               <div class="form-group">
                 <label for="job-location">Τοποθεσία</label>
                 <select class="selectpicker border rounded" id="job-type" data-style="btn-black" data-width="100%" data-live-search="true" title="Παρακαλώ επιλέξτε">
                   <option>Επέλεξε Περιφέρεια</option>
-                  <option>Αττική</option>
+                  <option selected="selected">Αττική</option>
                   <option>Θεσσαλία</option>
                   <option>Πελοπόννησος</option>
                   <option>Κρήτη</option>
@@ -173,11 +173,11 @@
                 </select>
               </div>
 
-              <div class="form-group">
+              <div class=" form-group">
                 <label for="job-type">Τρόπος Απασχόλησης</label>
                 <select class="selectpicker border rounded" id="job-type" data-style="btn-black" data-width="100%" title="Παρακαλώ επιλέξτε">
                   <option>Παρακαλώ επιλέξτε</option>
-                  <option>Πλήρης Απασχόληση</option>
+                  <option selected="selected">Πλήρης Απασχόληση</option>
                   <option>Μερική Απασχόληση</option>
                 </select>
               </div>
@@ -187,25 +187,34 @@
                 <select class="selectpicker border rounded" id="job-duration" data-style="btn-black" data-width="100%" title="Παρακαλώ επιλέξτε">
                   <option>Παρακαλώ επιλέξτε</option>
                   <option>3 μήνες</option>
-                  <option>6 μήνες</option>
+                  <option selected="selected">6 μήνες</option>
                 </select>
               </div>
 
               <div class="form-group">
                 <label for="job-salary">Μηνιαία Αμοιβή</label>
-                <input type="number" id="salary" name="salary" min="0" max="100000" placeholder="€" data-type="currency"></input>
+                <input type="number" id="salary" name="salary" min="0" max="100000" placeholder="€" data-type="currency" value="1000" </input>
               </div>
 
               <div class="form-group">
                 <label for="job-start-date">Ημερομηνία έναρξης</label>
-                <input type="date" id="job-start-date" name="job-start-date" class="form-control">
+                <input type="date" id="job-start-date" name="job-start-date" class="form-control" value="2023-02-01">
                 <label for="job-end-date">Ημερομηνία λήξης</label>
-                <input type="date" id="job-end-date" name="job-end-date" class="form-control">
+                <input type="date" id="job-end-date" name="job-end-date" class="form-control" value="2023-08-01">
               </div>
 
               <div class="form-group">
                 <label for="job-description">Περιγραφή Αγγελίας</label>
-                <textarea name="job-description" id="job-description" cols="30" rows="10" class="form-control"></textarea>
+                <textarea name="job-description" id="job-description" cols="30" rows="10" class="form-control">
+                  At adidas, our love for sport drives who we are and what we do. But just as a ball is more than leather and thread, and a show more than padding and plastic, we are bigger than our products. We don't just work to create faster shoes and lighter fabrics. We strive to help athletes everywhere perform their best. We believe that it's hard work inventing the future of sport, and that's why we love it; that when you push your limits, you make it possible for others to push theirs.  
+                  We believe that through Sport, we have the power to change lives.  To change lives, we have to create direct relationships with consumers and the best way to accelerate building direct relationships is through Digital.  
+                  Software Developer – Frontend  
+                  Purpose:  
+                  One way to reach this goal lies within the Brand and Creation Technologies team which is the center of the product creation for our internal users at adidas.   
+                  We are in charge of creating the information systems covering the product creation lifecycle from debriefing of Marketing over design and factory users to delivery. All of this with the goal to create data consistency, centralizing and gaining speed, with the result to reducing product creation time, thus making everything more sustainable.  
+                  As part of the engineering team your mission is to deliver high quality software at speed. You will be developing and operating our software products, showcasing your creativity and using the latest technologies to bring ideas to life.  
+                  We are looking for a Software Engineer to join our team of engineers in Zaragoza that will help us to improve and extend our front end solution based on best in class  frameworks.
+                </textarea>
               </div>
             </form>
           </div>
