@@ -223,14 +223,14 @@
             <div class="row pagination-wrap page-selector">
               <div class="col-md-6 text-center inner-page-selector">
                 <div class="custom-pagination ml-auto">
-                  <a href="#" class="prev">Προηγούμενη</a>
+                  <a href="#" class="saved-jobs-prev">Προηγούμενη</a>
                   <div class="d-inline-block">
                     <a href="#" class="active">1</a>
                     <a href="#">2</a>
                     <a href="#">3</a>
                     <a href="#">4</a>
                   </div>
-                  <a href="#" class="next">Επόμενη</a>
+                  <a href="#" class="saved-jobs-next">Επόμενη</a>
                 </div>
               </div>
             </div>
