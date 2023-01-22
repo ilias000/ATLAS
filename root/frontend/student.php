@@ -128,8 +128,8 @@ $user_data = check_login($connection); // If the user is not logged in they will
                             <li><a href="student.php">Αναζήτηση Θέσης</a></li>
                             <li><a href="savedJobs.php">Αγαπημένα</a></li>
                             <li><a href="applications.php">Αιτήσεις</a></li>
-                            <li><a href="faqStudent.html">Βοήθεια</a></li>
-                            <li><a href="contact.php">Επικοινωνία</a></li>
+                            <li><a href="faqStudent.php?loggedIn=true">Βοήθεια</a></li>
+                            <li><a href="contact.php?loggedIn=true">Επικοινωνία</a></li>
                         </ul>
                     </nav>
 

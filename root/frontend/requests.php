@@ -141,7 +141,7 @@ $user_data = check_login($connection); // If the user is not logged in they will
                             <li><a href="company.php">Ενεργές Θέσεις</a></li>
                             <li><a href="post-job.php">Δημιουργία Θέσης</a></li>
                             <li><a href="requests.php">Αιτήσεις</a></li>
-                            <li><a href="faqCompany.html">Βοήθεια</a></li>
+                            <li><a href="faqCompany.php?loggedIn=true">Βοήθεια</a></li>
                         </ul>
                     </nav>
 
@@ -178,122 +178,82 @@ $user_data = check_login($connection); // If the user is not logged in they will
             <div class="listings">
                 <ul class="job-listings mb-5">
                     <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                        <a></a>
+                        <a href="request-details.php"></a>
                         <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between align-items-center mx-4">
-                            <div class="job-listing-position custom-width mb-3 mb-sm-0" style="width: 20%;">
+                            <div class="job-listing-position custom-width mb-3 mb-sm-0" style="width: 70%;">
                                 <h2>StudentFirstName StudentLastName</h2>
-                                <strong>University</strong>
-                            </div>
-                            <div class="filter_box">
-                                <span>StudentText</span>
                             </div>
                             <div class="job-listing-location mb-3 mb-sm-0 custom-width w-25">
                                 <i class="fa fa-at" aria-hidden="true"></i> student@mail.com
                                 <br>
                                 <i class="fa fa-phone" aria-hidden="true"></i> +30 0000000000
-                                <br>
-                                <i class="fa fa-file" aria-hidden="true"></i>
-                                <span style="text-decoration: underline; margin-left: 5px"> transcript.pdf</span>
                             </div>
-                            <button href="rejection.php" class="btn btn-outline-red btn-sm post-btn">Απόρριψη</button>
+                            <button onclick="window.location.href='rejection.php'" class="btn btn-outline-red btn-sm post-btn">Απόρριψη</button>
                             <button onclick="window.location.href='edit-job.php'" class="btn btn-outline-green btn-sm preview-btn">Αποδοχή</button>
-
                         </div>
 
                     </li>
                     <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                        <a></a>
+                        <a href="request-details.php"></a>
                         <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between align-items-center mx-4">
-                            <div class="job-listing-position custom-width mb-3 mb-sm-0" style="width: 20%;">
+                            <div class="job-listing-position custom-width mb-3 mb-sm-0" style="width: 70%;">
                                 <h2>StudentFirstName StudentLastName</h2>
-                                <strong>University</strong>
-                            </div>
-                            <div class="filter_box">
-                                <span>StudentText</span>
                             </div>
                             <div class="job-listing-location mb-3 mb-sm-0 custom-width w-25">
                                 <i class="fa fa-at" aria-hidden="true"></i> student@mail.com
                                 <br>
                                 <i class="fa fa-phone" aria-hidden="true"></i> +30 0000000000
-                                <br>
-                                <i class="fa fa-file" aria-hidden="true"></i>
-                                <span style="text-decoration: underline; margin-left: 5px"> transcript.pdf</span>
                             </div>
-                            <button href="rejection.php" class="btn btn-outline-red btn-sm post-btn">Απόρριψη</button>
+                            <button onclick="window.location.href='rejection.php'" class="btn btn-outline-red btn-sm post-btn">Απόρριψη</button>
                             <button onclick="window.location.href='edit-job.php'" class="btn btn-outline-green btn-sm preview-btn">Αποδοχή</button>
-
                         </div>
 
                     </li>
                     <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                        <a></a>
+                        <a href="request-details.php"></a>
                         <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between align-items-center mx-4">
-                            <div class="job-listing-position custom-width mb-3 mb-sm-0" style="width: 20%;">
+                            <div class="job-listing-position custom-width mb-3 mb-sm-0" style="width: 70%;">
                                 <h2>StudentFirstName StudentLastName</h2>
-                                <strong>University</strong>
-                            </div>
-                            <div class="filter_box">
-                                <span>StudentText</span>
                             </div>
                             <div class="job-listing-location mb-3 mb-sm-0 custom-width w-25">
                                 <i class="fa fa-at" aria-hidden="true"></i> student@mail.com
                                 <br>
                                 <i class="fa fa-phone" aria-hidden="true"></i> +30 0000000000
-                                <br>
-                                <i class="fa fa-file" aria-hidden="true"></i>
-                                <span style="text-decoration: underline; margin-left: 5px"> transcript.pdf</span>
                             </div>
-                            <button href="rejection.php" class="btn btn-outline-red btn-sm post-btn">Απόρριψη</button>
+                            <button onclick="window.location.href='rejection.php'" class="btn btn-outline-red btn-sm post-btn">Απόρριψη</button>
                             <button onclick="window.location.href='edit-job.php'" class="btn btn-outline-green btn-sm preview-btn">Αποδοχή</button>
-
                         </div>
 
                     </li>
                     <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                        <a></a>
+                        <a href="request-details.php"></a>
                         <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between align-items-center mx-4">
-                            <div class="job-listing-position custom-width mb-3 mb-sm-0" style="width: 20%;">
+                            <div class="job-listing-position custom-width mb-3 mb-sm-0" style="width: 70%;">
                                 <h2>StudentFirstName StudentLastName</h2>
-                                <strong>University</strong>
-                            </div>
-                            <div class="filter_box">
-                                <span>StudentText</span>
                             </div>
                             <div class="job-listing-location mb-3 mb-sm-0 custom-width w-25">
                                 <i class="fa fa-at" aria-hidden="true"></i> student@mail.com
                                 <br>
                                 <i class="fa fa-phone" aria-hidden="true"></i> +30 0000000000
-                                <br>
-                                <i class="fa fa-file" aria-hidden="true"></i>
-                                <span style="text-decoration: underline; margin-left: 5px"> transcript.pdf</span>
                             </div>
-                            <button href="rejection.php" class="btn btn-outline-red btn-sm post-btn">Απόρριψη</button>
+                            <button onclick="window.location.href='rejection.php'" class="btn btn-outline-red btn-sm post-btn">Απόρριψη</button>
                             <button onclick="window.location.href='edit-job.php'" class="btn btn-outline-green btn-sm preview-btn">Αποδοχή</button>
-
                         </div>
 
                     </li>
                     <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                        <a></a>
+                        <a href="request-details.php"></a>
                         <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between align-items-center mx-4">
-                            <div class="job-listing-position custom-width mb-3 mb-sm-0" style="width: 20%;">
+                            <div class="job-listing-position custom-width mb-3 mb-sm-0" style="width: 70%;">
                                 <h2>StudentFirstName StudentLastName</h2>
-                                <strong>University</strong>
-                            </div>
-                            <div class="filter_box">
-                                <span>StudentText</span>
                             </div>
                             <div class="job-listing-location mb-3 mb-sm-0 custom-width w-25">
                                 <i class="fa fa-at" aria-hidden="true"></i> student@mail.com
                                 <br>
                                 <i class="fa fa-phone" aria-hidden="true"></i> +30 0000000000
-                                <br>
-                                <i class="fa fa-file" aria-hidden="true"></i>
-                                <span style="text-decoration: underline; margin-left: 5px"> transcript.pdf</span>
                             </div>
-                            <button href="rejection.php" class="btn btn-outline-red btn-sm post-btn">Απόρριψη</button>
+                            <button onclick="window.location.href='rejection.php'" class="btn btn-outline-red btn-sm post-btn">Απόρριψη</button>
                             <button onclick="window.location.href='edit-job.php'" class="btn btn-outline-green btn-sm preview-btn">Αποδοχή</button>
-
                         </div>
 
                     </li>

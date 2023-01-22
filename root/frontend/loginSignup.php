@@ -45,7 +45,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { // If something was posted
           $_SESSION["session_id"] = $user_data['session_id'];
           // Redirect the user.
           if ($user_data['user_type'] === 'ΦΟΙΤΗΤΗΣ') {
-            header("Location: student.php");
+            if (isset($_GET['to']) && isset($_GET['user_type']) && !strcmp($_GET['user_type'], "student")) {
+              $to = $_GET['to'];
+              header("Location: $to");
+            } else {
+              header("Location: student.php");
+            }
           } elseif ($user_data['user_type'] === 'ΕΤΑΙΡΕΙΑ') {
             if (isset($_GET['to']) && isset($_GET['user_type']) && !strcmp($_GET['user_type'], "company")) {
               $to = $_GET['to'];
@@ -261,8 +266,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { // If something was posted
               <li class="has-children">
                 <a href="#">Βοήθεια</a>
                 <ul class="dropdown">
-                  <li><a href="faqStudent.html">Είμαι Φοιτητής/τρια</a></li>
-                  <li><a href="faqCompany.html">Είμαι Φορέας Υποδοχής</a></li>
+                  <li><a href="faqStudent.php">Είμαι Φοιτητής/τρια</a></li>
+                  <li><a href="faqCompany.php">Είμαι Φορέας Υποδοχής</a></li>
                 </ul>
               </li>
               <li><a href="contact.php">Επικοινωνία</a></li>

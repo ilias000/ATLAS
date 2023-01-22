@@ -112,8 +112,8 @@ if (isset($_GET['textForSearch'])) {
                             <li class="has-children">
                                 <a href="#">Βοήθεια</a>
                                 <ul class="dropdown">
-                                    <li><a href="./faqStudent.html">Είμαι Φοιτητής/τρια</a></li>
-                                    <li><a href="./faqCompany.html">Είμαι Φορέας Υποδοχής</a></li>
+                                    <li><a href="./faqStudent.php">Είμαι Φοιτητής/τρια</a></li>
+                                    <li><a href="./faqCompany.php">Είμαι Φορέας Υποδοχής</a></li>
                                 </ul>
                             </li>
                             <li><a href="contact.php">Επικοινωνία</a></li>

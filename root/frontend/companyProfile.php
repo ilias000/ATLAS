@@ -76,7 +76,7 @@
                             <li><a href="company.php">Ενεργές Θέσεις</a></li>
                             <li><a href="post-job.php">Δημιουργία Θέσης</a></li>
                             <li><a href="requests.php">Αιτήσεις</a></li>
-                            <li><a href="faqCompany.html">Βοήθεια</a></li>
+                            <li><a href="faqCompany.php?loggedIn=true">Βοήθεια</a></li>
                         </ul>
                     </nav>
 

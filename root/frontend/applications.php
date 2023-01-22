@@ -78,6 +78,11 @@
         bottom: 10px;
     }
 
+    .btn.btn-primary.btn-sm.post-btn {
+        position: absolute;
+        right: 170px;
+        bottom: 10px;
+    }
 </style>
 
 <head>
@@ -133,8 +138,8 @@
                             <li><a href="student.php">Αναζήτηση Θέσης</a></li>
                             <li><a href="savedJobs.php">Αγαπημένα</a></li>
                             <li><a href="applications.php">Αιτήσεις</a></li>
-                            <li><a href="faqStudent.html">Βοήθεια</a></li>
-                            <li><a href="contact.php">Επικοινωνία</a></li>
+                            <li><a href="faqStudent.php?loggedIn=true">Βοήθεια</a></li>
+                            <li><a href="contact.php?loggedIn=true">Επικοινωνία</a></li>
                         </ul>
                     </nav>
 
@@ -171,7 +176,7 @@
             <div class="listings">
                 <ul class="job-listings mb-5">
                     <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                        <a href="job-description.php"></a>
+                        <a href="job-description.php?loggedIn=true"></a>
                         <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between align-items-center mx-4">
                             <div class="job-listing-position custom-width mb-3 mb-sm-0" style="width: 20%;">
                                 <h2>Product Designer</h2>
@@ -190,6 +195,7 @@
                             </div>
 
                             <button class="btn btn-primary btn-sm preview-btn">Ιδιωτικό Συμφωνητικό</button>
+                            <button class="btn btn-primary btn-sm post-btn">Προεπισκόπηση</button>
 
                             <div class="job-listing-meta">
                                 <span class="badge badge-danger">Μερική Απασχόληση</span>
@@ -199,7 +205,7 @@
 
                     </li>
                     <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                        <a href="job-description.php"></a>
+                        <a href="job-description.php?loggedIn=true"></a>
 
                         <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
                             <div class="job-listing-position custom-width mb-3 mb-sm-0" style="width: 20%;">
@@ -224,7 +230,7 @@
                     </li>
 
                     <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                        <a href="job-description.php"></a>
+                        <a href="job-description.php?loggedIn=true"></a>
 
                         <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
                             <div class="job-listing-position custom-width mb-3 mb-sm-0" style="width: 20%;">
@@ -249,7 +255,7 @@
                     </li>
 
                     <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                        <a href="job-description.php"></a>
+                        <a href="job-description.php?loggedIn=true"></a>
 
                         <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
                             <div class="job-listing-position custom-width mb-3 mb-sm-0" style="width: 20%;">
@@ -265,7 +271,7 @@
                                 <br>
                                 <i class="fa fa-eur" aria-hidden="true"></i> 2400
                             </div>
-                            <button onclick="window.location.href='job-description.php'" class="btn btn-primary btn-sm preview-btn">Προεπισκόπηση</button>
+                            <button onclick="window.location.href='job-description.php?loggedIn=true'" class="btn btn-primary btn-sm preview-btn">Προεπισκόπηση</button>
                             <div class="job-listing-meta">
                                 <span class="badge badge-success">Πλήρη Απασχόληση</span>
                             </div>
@@ -273,7 +279,7 @@
                     </li>
 
                     <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                        <a href="job-description.php"></a>
+                        <a href="job-description.php?loggedIn=true"></a>
 
                         <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
                             <div class="job-listing-position custom-width mb-3 mb-sm-0" style="width: 20%;">
@@ -289,7 +295,7 @@
                                 <br>
                                 <i class="fa fa-eur" aria-hidden="true"></i> 1100
                             </div>
-                            <button onclick="window.location.href='job-description.php'" class="btn btn-primary btn-sm preview-btn">Προεπισκόπηση</button>
+                            <button onclick="window.location.href='job-description.php?loggedIn=true'" class="btn btn-primary btn-sm preview-btn">Προεπισκόπηση</button>
                             <div class="job-listing-meta">
                                 <span class="badge badge-success">Πλήρη Απασχόληση</span>
                             </div>

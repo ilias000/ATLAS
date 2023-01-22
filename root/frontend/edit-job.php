@@ -76,7 +76,7 @@
               <li><a href="company.php">Ενεργές Θέσεις</a></li>
               <li><a href="post-job.php">Δημιουργία Θέσης</a></li>
               <li><a href="requests.php">Αιτήσεις</a></li>
-              <li><a href="faqCompany.html">Βοήθεια</a></li>
+              <li><a href="faqCompany.php?loggedIn=true">Βοήθεια</a></li>
             </ul>
           </nav>
 
@@ -119,7 +119,7 @@
           <div class="col-lg-4">
             <div class="row">
               <div class="col-6">
-                <a href="job-description.php" class="btn btn-block btn-light btn-md"><span class="icon-open_in_new mr-2"></span>Προεπισκόπηση</a>
+                <a href="job-description.php?loggedIn=true" class="btn btn-block btn-light btn-md"><span class="icon-open_in_new mr-2"></span>Προεπισκόπηση</a>
               </div>
               <div class="col-6">
                 <a href="#" class="btn btn-block btn-primary btn-md" style="width: 180px; position: absolute; right: 15px;">Οριστική υποβολή</a>
@@ -226,7 +226,7 @@
           <div class="col-lg-4 ml-auto">
             <div class="row">
               <div class="col-6">
-                <a href="job-description.php" class="btn btn-block btn-light btn-md"><span class="icon-open_in_new mr-2"></span>Προεπισκόπηση</a>
+                <a href="job-description.php?loggedIn=true" class="btn btn-block btn-light btn-md"><span class="icon-open_in_new mr-2"></span>Προεπισκόπηση</a>
               </div>
               <div class="col-6">
                 <a href="#" class="btn btn-block btn-primary btn-md" style="width: 180px; position: absolute; right: 15px;">Οριστική υποβολή</a>

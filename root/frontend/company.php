@@ -141,7 +141,7 @@ $user_data = check_login($connection); // If the user is not logged in they will
                             <li><a href="company.php">Ενεργές Θέσεις</a></li>
                             <li><a href="post-job.php">Δημιουργία Θέσης</a></li>
                             <li><a href="requests.php">Αιτήσεις</a></li>
-                            <li><a href="faqCompany.html">Βοήθεια</a></li>
+                            <li><a href="faqCompany.php?loggedIn=true">Βοήθεια</a></li>
                         </ul>
                     </nav>
 
@@ -178,7 +178,7 @@ $user_data = check_login($connection); // If the user is not logged in they will
             <div class="listings">
                 <ul class="job-listings mb-5">
                     <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                        <a href="job-description.php"></a>
+                        <a href="job-description.php?loggedIn=true"></a>
                         <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between align-items-center mx-4">
                             <div class="job-listing-position custom-width mb-3 mb-sm-0" style="width: 20%;">
                                 <h2>Product Designer</h2>
@@ -193,7 +193,7 @@ $user_data = check_login($connection); // If the user is not logged in they will
                                 <br>
                                 <i class="fa fa-eur" aria-hidden="true"></i> 1000
                             </div>
-                            <button onclick="window.location.href='job-description.php'" class="btn btn-primary btn-sm preview-btn">Προεπισκόπηση</button>
+                            <button onclick="window.location.href='job-description.php?loggedIn=true'" class="btn btn-primary btn-sm preview-btn">Προεπισκόπηση</button>
                             <div class="job-listing-meta">
                                 <span class="badge badge-danger">Μερική Απασχόληση</span>
                             </div>
@@ -227,7 +227,7 @@ $user_data = check_login($connection); // If the user is not logged in they will
                     </li>
 
                     <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                        <a href="job-description.php"></a>
+                        <a href="job-description.php?loggedIn=true"></a>
 
                         <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
                             <div class="job-listing-position custom-width mb-3 mb-sm-0" style="width: 20%;">
@@ -252,7 +252,7 @@ $user_data = check_login($connection); // If the user is not logged in they will
                     </li>
 
                     <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                        <a href="job-description.php"></a>
+                        <a href="job-description.php?loggedIn=true"></a>
 
                         <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
                             <div class="job-listing-position custom-width mb-3 mb-sm-0" style="width: 20%;">
@@ -268,7 +268,7 @@ $user_data = check_login($connection); // If the user is not logged in they will
                                 <br>
                                 <i class="fa fa-eur" aria-hidden="true"></i> 2400
                             </div>
-                            <button onclick="window.location.href='job-description.php'" class="btn btn-primary btn-sm preview-btn">Προεπισκόπηση</button>
+                            <button onclick="window.location.href='job-description.php?loggedIn=true'" class="btn btn-primary btn-sm preview-btn">Προεπισκόπηση</button>
                             <div class="job-listing-meta">
                                 <span class="badge badge-success">Πλήρη Απασχόληση</span>
                             </div>
@@ -276,7 +276,7 @@ $user_data = check_login($connection); // If the user is not logged in they will
                     </li>
 
                     <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                        <a href="job-description.php"></a>
+                        <a href="job-description.php?loggedIn=true"></a>
 
                         <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
                             <div class="job-listing-position custom-width mb-3 mb-sm-0" style="width: 20%;">
@@ -292,7 +292,7 @@ $user_data = check_login($connection); // If the user is not logged in they will
                                 <br>
                                 <i class="fa fa-eur" aria-hidden="true"></i> 1100
                             </div>
-                            <button onclick="window.location.href='job-description.php'" class="btn btn-primary btn-sm preview-btn">Προεπισκόπηση</button>
+                            <button onclick="window.location.href='job-description.php?loggedIn=true'" class="btn btn-primary btn-sm preview-btn">Προεπισκόπηση</button>
                             <div class="job-listing-meta">
                                 <span class="badge badge-success">Πλήρη Απασχόληση</span>
                             </div>

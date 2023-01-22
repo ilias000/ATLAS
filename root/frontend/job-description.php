@@ -86,8 +86,8 @@ if ((isset($_GET['loggedIn'])) && (!strcmp($_GET['loggedIn'], "true"))) {
                 <li><a href="student.php">Αναζήτηση Θέσης</a></li>
                 <li><a href="savedJobs.php">Αγαπημένα</a></li>
                 <li><a href="search.php">Αιτήσεις</a></li>
-                <li><a href="faqStudent.html">Βοήθεια</a></li>
-                <li><a href="contact.php">Επικοινωνία</a></li>
+                <li><a href="faqStudent.php?loggedIn=true">Βοήθεια</a></li>
+                <li><a href="contact.php?loggedIn=true">Επικοινωνία</a></li>
               </ul>
             </nav>
 
@@ -114,8 +114,8 @@ if ((isset($_GET['loggedIn'])) && (!strcmp($_GET['loggedIn'], "true"))) {
                 <li class="has-children">
                   <a href="#">Βοήθεια</a>
                   <ul class="dropdown">
-                    <li><a href="./faqStudent.html">Είμαι Φοιτητής/τρια</a></li>
-                    <li><a href="./faqCompany.html">Είμαι Φορέας Υποδοχής</a></li>
+                    <li><a href="./faqStudent.php">Είμαι Φοιτητής/τρια</a></li>
+                    <li><a href="./faqCompany.php">Είμαι Φορέας Υποδοχής</a></li>
                   </ul>
                 </li>
                 <li><a href="contact.php">Επικοινωνία</a></li>
@@ -178,7 +178,16 @@ if ((isset($_GET['loggedIn'])) && (!strcmp($_GET['loggedIn'], "true"))) {
                 <a href="#" class="btn btn-block btn-light btn-md"><span class="icon-heart-o mr-2 text-danger"></span>Αγαπημένα</a>
               </div>
               <div class="col-6">
-                <a href="request-form.php" class="btn btn-block btn-primary btn-md">Κάνε Αίτηση</a>
+                <?php
+                if ((!isset($user_data)) || (isset($user_data) && !strcmp($user_data['user_type'], "ΦΟΙΤΗΤΗΣ")))
+                  if ((isset($_GET['loggedIn'])) && (!strcmp($_GET['loggedIn'], "true"))) { ?>
+                  <a href="request-form.php" class="btn btn-block btn-primary btn-md">Κάνε Αίτηση</a>
+                <?php
+                  } else { ?>
+                  <a href="loginSignup.php?to=request-form.php&user_type=student" class="btn btn-block btn-primary btn-md">Κάνε Αίτηση</a>
+                <?php
+                  }
+                ?>
               </div>
             </div>
           </div>
