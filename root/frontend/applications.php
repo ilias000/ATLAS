@@ -77,6 +77,7 @@
         right: 130px;
         bottom: 10px;
     }
+
 </style>
 
 <head>
@@ -177,15 +178,19 @@
                                 <strong>Adidas</strong>
                             </div>
                             <div class="filter_box">
-                                <span>Κατάσταση Αγγελίας: </span>
-                                <span style="color: green">Οριστική Υποβολή</span>
+                                <span><strong>Κατάσταση Αγγελίας:</strong></span>
+                                <span>Οριστική Υποβολή</span>
+                                <span>|</span>
+                                <span style="color: green; font-weight: 600;">Εγκεκριμένη</span>
                             </div>
                             <div class="job-listing-location mb-3 mb-sm-0 custom-width w-25">
                                 <span class="icon-room"></span> New York, New York
                                 <br>
                                 <i class="fa fa-eur" aria-hidden="true"></i> 1000
                             </div>
-                            <button onclick="window.location.href='job-description.php'" class="btn btn-primary btn-sm preview-btn">Προεπισκόπηση</button>
+
+                            <button class="btn btn-primary btn-sm preview-btn">Ιδιωτικό Συμφωνητικό</button>
+
                             <div class="job-listing-meta">
                                 <span class="badge badge-danger">Μερική Απασχόληση</span>
                             </div>
@@ -202,7 +207,7 @@
                                 <strong>Adidas</strong>
                             </div>
                             <div class="filter_box">
-                                <span>Κατάσταση Αγγελίας: </span>
+                                <span><strong>Κατάσταση Αγγελίας:</strong></span>
                                 <span style="color: grey">Προσωρινά αποθηκευμένη</span>
                             </div>
                             <div class="job-listing-location mb-3 mb-sm-0 custom-width w-25">
@@ -227,7 +232,7 @@
                                 <strong>Adidas</strong>
                             </div>
                             <div class="filter_box">
-                                <span>Κατάσταση Αγγελίας: </span>
+                                <span><strong>Κατάσταση Αγγελίας:</strong></span>
                                 <span style="color: grey">Προσωρινά αποθηκευμένη</span>
                             </div>
                             <div class="job-listing-location mb-3 mb-sm-0 custom-width w-25">
@@ -252,8 +257,8 @@
                                 <strong>Adidas</strong>
                             </div>
                             <div class="filter_box">
-                                <span>Κατάσταση Αγγελίας: </span>
-                                <span style="color: green">Οριστική Υποβολή</span>
+                                <span><strong>Κατάσταση Αγγελίας:</strong></span>
+                                <span>Οριστική Υποβολή</span>
                             </div>
                             <div class="job-listing-location mb-3 mb-sm-0 custom-width w-25">
                                 <span class="icon-room"></span> Anywhere
@@ -276,8 +281,8 @@
                                 <strong>Adidas</strong>
                             </div>
                             <div class="filter_box">
-                                <span>Κατάσταση Αγγελίας: </span>
-                                <span style="color: green">Οριστική Υποβολή</span>
+                                <span><strong>Κατάσταση Αγγελίας:</strong></span>
+                                <span>Οριστική Υποβολή</span>
                             </div>
                             <div class="job-listing-location mb-3 mb-sm-0 custom-width w-25">
                                 <span class="icon-room"></span> San Mateo, CA
