@@ -1,3 +1,17 @@
+<?php
+
+// Checking if the user has clicked on the post button.
+if ($_SERVER['REQUEST_METHOD'] == 'POST') { // If something was posted
+
+  if (isset($_POST['search'])) { // Search POST request.
+    // Collect the users data.
+    $textForSearch = $_POST['textForSearch'];
+
+    header("Location: search.php?textForSearch=$textForSearch");
+    die;
+  }
+}
+?>
 <!doctype html>
 <html lang="en">
 
@@ -97,8 +111,8 @@
             </div>
             <form method="post" class="search-jobs-form">
               <div class="row mb-5" style="justify-content: center; flex-wrap: nowrap">
-                <input type="text" class="form-control form-control-lg" style="width: 65%; margin-right:10px" placeholder="Τίτλος εργασίας, Εταιρία...">
-                <button type="submit" class="btn btn-primary btn-lg btn-block btn-search search-button" style="width: 15%;"><span class="icon-search icon mr-2"></span>Αναζήτηση</button>
+                <input name="textForSearch" type="text" class="form-control form-control-lg" style="width: 65%; margin-right:10px" placeholder="Τίτλος εργασίας, Εταιρία...">
+                <button name="search" type="submit" class="btn btn-primary btn-lg btn-block btn-search search-button" style="width: 15%;"><span class="icon-search icon mr-2"></span>Αναζήτηση</button>
               </div>
             </form>
           </div>
@@ -118,7 +132,7 @@
 
       <ul class="job-listings mb-5">
         <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-          <a href="job-single.html"></a>
+          <a href="job-description.php"></a>
           <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
             <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
               <h2>Product Designer</h2>
@@ -137,7 +151,7 @@
 
         </li>
         <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-          <a href="job-single.html"></a>
+          <a href="job-description.php"></a>
 
           <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
             <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
@@ -157,7 +171,7 @@
         </li>
 
         <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-          <a href="job-single.html"></a>
+          <a href="job-description.php"></a>
 
           <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
             <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
@@ -177,7 +191,7 @@
         </li>
 
         <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-          <a href="job-single.html"></a>
+          <a href="job-description.php"></a>
 
           <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
             <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
@@ -197,7 +211,7 @@
         </li>
 
         <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-          <a href="job-single.html"></a>
+          <a href="job-description.php"></a>
 
           <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
             <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">

@@ -1783,6 +1783,22 @@ select{
   color: black;
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+  }
+  
+  ::-webkit-scrollbar-track {
+  border: 1px solid #3C6EAD;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+  background: #3C6EAD;  
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+  background: #224d81;  
+  }
+
 /* .list-unstyled, .pl-3{
   color: #000;
 }
