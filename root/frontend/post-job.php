@@ -120,10 +120,10 @@
           <div class="col-lg-4">
             <div class="row">
               <div class="col-6">
-                <a href="#" class="btn btn-block btn-primary btn-md" style="width: 180px; position: absolute; right: 15px; margin-right: 46rem;">Αποθήκευση</a>
+                <a href="#" class="btn btn-block btn-primary btn-md" style="width: 180px; position: absolute; right: 15px; border: 1px solid #3C6EAD">Αποθήκευση</a>
               </div>
               <div class="col-6">
-                <a href="#" class="btn btn-block btn-primary btn-md" style="width: 180px; position: absolute; right: 15px;">Οριστική υποβολή</a>
+                <a href="#" class="btn btn-block btn-outline-red btn-md" style="width: 180px; position: absolute; right: 15px; border-width: 1px">Οριστική υποβολή</a>
               </div>
             </div>
           </div>
@@ -218,10 +218,10 @@
           <div class="col-lg-4 ml-auto">
             <div class="row">
               <div class="col-6">
-                <a href="#" class="btn btn-block btn-primary btn-md" style="width: 180px; position: absolute; right: 15px; margin-right: 46rem;">Αποθήκευση</a>
+                <a href="#" class="btn btn-block btn-primary btn-md" style="width: 180px; position: absolute; right: 15px; border: 1px solid #3C6EAD">Αποθήκευση</a>
               </div>
               <div class="col-6">
-                <a href="#" class="btn btn-block btn-primary btn-md" style="width: 180px; position: absolute; right: 15px;">Οριστική υποβολή</a>
+                <a href="#" class="btn btn-block btn-outline-red btn-md" style="width: 180px; position: absolute; right: 15px; border-width: 1px">Οριστική υποβολή</a>
               </div>
             </div>
           </div>

@@ -32,7 +32,7 @@
 </style>
 
 <head>
-    <title>Φόρμα Αίτησης</title>
+    <title>Επεξεργασία Αίτησης</title>
     <link rel="icon" type="image/ico" href="images/favicon.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -79,10 +79,10 @@
 
                 <nav class="mx-auto site-navigation">
                     <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
-                        <li><a href="search.php">Αναζήτηση Θέσης</a></li>
-                        <li><a href="search.php">Αγαπημένα</a></li>
-                        <li><a href="search.php">Αιτήσεις</a></li>
-                        <li><a href="#">Βοήθεια</a></li>
+                        <li><a href="student.php">Αναζήτηση Θέσης</a></li>
+                        <li><a href="savedJobs.php">Αγαπημένα</a></li>
+                        <li><a href="applications.php">Αιτήσεις</a></li>
+                        <li><a href="faqStudent.php?loggedIn=true">Βοήθεια</a></li>
                         <li><a href="contact.php?loggedIn=true">Επικοινωνία</a></li>
                     </ul>
                 </nav>
@@ -106,14 +106,14 @@
             <div class="row">
                 <div class="col-md-7">
                     <h1 class="text-white font-weight-bold">
-                        Φόρμα Αίτησης
+                        Επεξεργασία αίτησης
                     </h1>
                     <div class="custom-breadcrumbs">
                         <a href="index.php">Αρχική</a> <span class="mx-2 slash">/</span>
                         <a href="loginSignup.php">Είσοδος</a> <span class="mx-2 slash">/</span>
                         <a href="student.php">Αναζήτηση Θέσης</a> <span class="mx-2 slash">/</span>
                         <a href="job-description.php?loggedIn=true">Περιγραφή Θέσης</a> <span class="mx-2 slash">/</span>
-                        <span class="text-white"><strong>Φόρμα Αίτησης</strong></span>
+                        <span class="text-white"><strong>Επεξεργασία Αίτησης</strong></span>
                     </div>
                 </div>
             </div>
@@ -123,15 +123,15 @@
     <section class="site-section" style="height: 1000px;">
         <form method="POST" class="p-4 border rounded" action="student.php" style="height: 100%; color:black">
             <label for="first_name">Όνομα</label><br>
-            <input type="text" name="first_name" placeholder="Όνομα" required oninvalid="this.setCustomValidity('Παρακαλώ εισάγετε ένα όνομα')" oninput="this.setCustomValidity('')"><br>
+            <input type="text" name="first_name" placeholder="Όνομα" required oninvalid="this.setCustomValidity('Παρακαλώ εισάγετε ένα όνομα')" oninput="this.setCustomValidity('')" value="FirstNameExample"><br>
             <label for="last_name">Επίθετο</label><br>
-            <input type="text" name="last_name" placeholder="Επίθετο" required oninvalid="this.setCustomValidity('Παρακαλώ εισάγετε ένα επίθετο')" oninput="this.setCustomValidity('')"><br>
-            <label for="email">Email</label><br>
-            <input type=" email" name="email" placeholder="Email" required oninvalid="this.setCustomValidity('Παρακαλώ εισάγετε ένα email')" oninput="this.setCustomValidity('')"><br>
+            <input type="text" name="last_name" placeholder="Επίθετο" required oninvalid="this.setCustomValidity('Παρακαλώ εισάγετε ένα επίθετο')" oninput="this.setCustomValidity('')" value="LastNameExample"><br>
+            <label for=" email">Email</label><br>
+            <input type=" email" name="email" placeholder="Email" required oninvalid="this.setCustomValidity('Παρακαλώ εισάγετε ένα email')" oninput="this.setCustomValidity('')" value="example@mail.com"><br>
             <label for="phone">Τηλέφωνο</label><br>
-            <input type="tel" name="phone" placeholder="Τηλέφωνο" required oninvalid="this.setCustomValidity('Παρακαλώ εισάγετε ένα τηλέφωνο')" oninput="this.setCustomValidity('')"><br>
+            <input type="tel" name="phone" placeholder="Τηλέφωνο" required oninvalid="this.setCustomValidity('Παρακαλώ εισάγετε ένα τηλέφωνο')" oninput="this.setCustomValidity('')" value="6900000000"><br>
             <label for="message">Γιατί ενδιαφερεστε γι' αυτήν την θέση;</label><br>
-            <textarea name="message" style="width: 97%; height:200px" placeholder="" required oninvalid="this.setCustomValidity('Παρακαλώ εισάγετε την απάντησή σας')" oninput="this.setCustomValidity('')"></textarea><br>
+            <textarea name="message" style="width: 97%; height:200px" placeholder="" required oninvalid="this.setCustomValidity('Παρακαλώ εισάγετε την απάντησή σας')" oninput="this.setCustomValidity('')">Ενδιαφέρομαι για την συγκεκριμένη θέση καθώς πιστεύω ότι οι ικανότητες μου πληρούν τις προϋποθέσεις που έχετε και διότι θα είμαι σίγουρα μία πολύ καλή προσθήκη στο πνεύμα της ομάδας σας.</textarea><br>
             <input type="file" id="upload-btn" hidden required oninvalid="this.setCustomValidity('Παρακαλώ ανεβάστε ένα αρχείο')" oninput="this.setCustomValidity('')">
             <label for="upload-btn" class="upload-btn-label">Επιλογή Αρχείου</label><span id="file-chosen">No file chosen</span><br>
             <script>

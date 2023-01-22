@@ -86,7 +86,7 @@
 </style>
 
 <head>
-    <title>Αναζήτηση Θέσης</title>
+    <title>Αιτήσεις</title>
     <link rel="icon" type="image/ico" href="images/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -222,7 +222,7 @@
                                 <i class="fa fa-eur" aria-hidden="true"></i> 950
                             </div>
                             <button href="#" class="btn btn-outline-red btn-sm post-btn">Οριστική Υποβολή</button>
-                            <button onclick="window.location.href='edit-job.php'" class="btn btn-primary btn-sm preview-btn">Επεξεργασία</button>
+                            <button onclick="window.location.href='edit-application.php'" class="btn btn-primary btn-sm preview-btn">Επεξεργασία</button>
                             <div class="job-listing-meta">
                                 <span class="badge badge-success">Πλήρη Απασχόληση</span>
                             </div>
@@ -247,7 +247,7 @@
                                 <i class="fa fa-eur" aria-hidden="true"></i> 673
                             </div>
                             <button href="#" class="btn btn-outline-red btn-sm post-btn">Οριστική Υποβολή</button>
-                            <button onclick="window.location.href='edit-job.php'" class="btn btn-primary btn-sm preview-btn">Επεξεργασία</button>
+                            <button onclick="window.location.href='edit-application.php'" class="btn btn-primary btn-sm preview-btn">Επεξεργασία</button>
                             <div class="job-listing-meta">
                                 <span class="badge badge-success">Πλήρη Απασχόληση</span>
                             </div>
@@ -271,7 +271,7 @@
                                 <br>
                                 <i class="fa fa-eur" aria-hidden="true"></i> 2400
                             </div>
-                            <button onclick="window.location.href='job-description.php?loggedIn=true'" class="btn btn-primary btn-sm preview-btn">Προεπισκόπηση</button>
+                            <button class="btn btn-primary btn-sm post-btn">Προεπισκόπηση</button>
                             <div class="job-listing-meta">
                                 <span class="badge badge-success">Πλήρη Απασχόληση</span>
                             </div>
@@ -295,7 +295,7 @@
                                 <br>
                                 <i class="fa fa-eur" aria-hidden="true"></i> 1100
                             </div>
-                            <button onclick="window.location.href='job-description.php?loggedIn=true'" class="btn btn-primary btn-sm preview-btn">Προεπισκόπηση</button>
+                            <button class="btn btn-primary btn-sm post-btn">Προεπισκόπηση</button>
                             <div class="job-listing-meta">
                                 <span class="badge badge-success">Πλήρη Απασχόληση</span>
                             </div>

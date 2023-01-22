@@ -117,10 +117,22 @@
             <h1 class="text-white font-weight-bold">
               Συχνές Eρωτήσεις Εταιρεία
             </h1>
-            <div class="custom-breadcrumbs">
-              <a href="index.php">Αρχική</a> <span class="mx-2 slash">/</span>
-              <span class="text-white"><strong>FAQ</strong></span>
-            </div>
+            <?php
+            if ((isset($_GET['loggedIn'])) && (!strcmp($_GET['loggedIn'], "true"))) { ?>
+              <div class="custom-breadcrumbs">
+                <a href="index.php">Αρχική</a> <span class="mx-2 slash">/</span>
+                <a href="loginSignup.php">Είσοδος</a> <span class="mx-2 slash">/</span>
+                <span class="text-white"><strong>FAQ</strong></span>
+              </div>
+            <?php
+            } else { ?>
+              <div class="custom-breadcrumbs">
+                <a href="index.php">Αρχική</a> <span class="mx-2 slash">/</span>
+                <span class="text-white"><strong>FAQ</strong></span>
+              </div>
+            <?php
+            }
+            ?>
           </div>
         </div>
       </div>

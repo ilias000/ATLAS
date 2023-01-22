@@ -89,7 +89,7 @@ $user_data = check_login($connection); // If the user is not logged in they will
 </style>
 
 <head>
-    <title>Αναζήτηση Θέσης</title>
+    <title>Ενεργές Θέσεις</title>
     <link rel="icon" type="image/ico" href="images/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -202,7 +202,7 @@ $user_data = check_login($connection); // If the user is not logged in they will
 
                     </li>
                     <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                        <a href="job-description.php"></a>
+                        <a href="job-description.php?loggedIn=true"></a>
 
                         <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
                             <div class="job-listing-position custom-width mb-3 mb-sm-0" style="width: 20%;">

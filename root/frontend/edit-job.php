@@ -26,7 +26,8 @@
 </style>
 
 <head>
-  <title>Δημιουργία Θέσης</title>
+  <title>Επεργασία Θέσης</title>
+  <link rel="icon" type="image/ico" href="images/favicon.ico">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -96,11 +97,12 @@
         <div class="row align-items-center justify-content-center">
           <div class="col-md-12" style="margin-top:80px">
             <div class="mb-5 text-left">
-              <h1 class="text-white font-weight-bold">Δημιουργία Θέσης</h1>
+              <h1 class="text-white font-weight-bold">Επεξεργασία Θέσης</h1>
               <div class="custom-breadcrumbs">
                 <a href="index.php">Αρχική</a> <span class="mx-2 slash">/</span>
                 <a href="loginSignup.php">Είσοδος</a> <span class="mx-2 slash">/</span>
-                <span class="text-white"><strong>Δημιουργία Θέσης</strong></span>
+                <a href="company.php">Ενεργές Θέσεις</a> <span class="mx-2 slash">/</span>
+                <span class="text-white"><strong>Επεξεργασία Θέσης</strong></span>
               </div>
             </div>
           </div>
@@ -119,10 +121,10 @@
           <div class="col-lg-4">
             <div class="row">
               <div class="col-6">
-                <a href="job-description.php?loggedIn=true" class="btn btn-block btn-light btn-md"><span class="icon-open_in_new mr-2"></span>Προεπισκόπηση</a>
+                <a href="#" class="btn btn-block btn-primary btn-md" style="width: 180px; position: absolute; right: 15px; border: 1px solid #3C6EAD">Αποθήκευση</a>
               </div>
               <div class="col-6">
-                <a href="#" class="btn btn-block btn-primary btn-md" style="width: 180px; position: absolute; right: 15px;">Οριστική υποβολή</a>
+                <a href="#" class="btn btn-block btn-outline-red btn-md" style="width: 180px; position: absolute; right: 15px; border-width: 1px">Οριστική υποβολή</a>
               </div>
             </div>
           </div>
@@ -206,13 +208,13 @@
               <div class="form-group">
                 <label for="job-description">Περιγραφή Αγγελίας</label>
                 <textarea name="job-description" id="job-description" cols="30" rows="10" class="form-control">
-                  At adidas, our love for sport drives who we are and what we do. But just as a ball is more than leather and thread, and a show more than padding and plastic, we are bigger than our products. We don't just work to create faster shoes and lighter fabrics. We strive to help athletes everywhere perform their best. We believe that it's hard work inventing the future of sport, and that's why we love it; that when you push your limits, you make it possible for others to push theirs.  
-                  We believe that through Sport, we have the power to change lives.  To change lives, we have to create direct relationships with consumers and the best way to accelerate building direct relationships is through Digital.  
-                  Software Developer – Frontend  
-                  Purpose:  
+                  At adidas, our love for sport drives who we are and what we do. But just as a ball is more than leather and thread, and a show more than padding and plastic, we are bigger than our products. We don't  just work to create faster shoes and lighter fabrics. We strive to help athletes everywhere perform their best. We believe that it's hard work inventing the future of sport, and that's why we love it; that when you push your limits, you make it possible for others to push theirs.
+                  We believe that through Sport, we have the power to change lives. To change lives, we have to create direct relationships with consumers and the best way to accelerate building direct relationships is through Digital.
+                  Software Developer–Frontend
+                  Purpose: 
                   One way to reach this goal lies within the Brand and Creation Technologies team which is the center of the product creation for our internal users at adidas.   
                   We are in charge of creating the information systems covering the product creation lifecycle from debriefing of Marketing over design and factory users to delivery. All of this with the goal to create data consistency, centralizing and gaining speed, with the result to reducing product creation time, thus making everything more sustainable.  
-                  As part of the engineering team your mission is to deliver high quality software at speed. You will be developing and operating our software products, showcasing your creativity and using the latest technologies to bring ideas to life.  
+                  As part of the engineering team your mission is to deliver high quality software at speed. You will be developing and operating our software products, showcasing your creativity and using the latest technologies to bring ideas to life. 
                   We are looking for a Software Engineer to join our team of engineers in Zaragoza that will help us to improve and extend our front end solution based on best in class  frameworks.
                 </textarea>
               </div>
@@ -226,10 +228,10 @@
           <div class="col-lg-4 ml-auto">
             <div class="row">
               <div class="col-6">
-                <a href="job-description.php?loggedIn=true" class="btn btn-block btn-light btn-md"><span class="icon-open_in_new mr-2"></span>Προεπισκόπηση</a>
+                <a href="#" class="btn btn-block btn-primary btn-md" style="width: 180px; position: absolute; right: 15px; border: 1px solid #3C6EAD">Αποθήκευση</a>
               </div>
               <div class="col-6">
-                <a href="#" class="btn btn-block btn-primary btn-md" style="width: 180px; position: absolute; right: 15px;">Οριστική υποβολή</a>
+                <a href="#" class="btn btn-block btn-outline-red btn-md" style="width: 180px; position: absolute; right: 15px; border-width: 1px">Οριστική υποβολή</a>
               </div>
             </div>
           </div>

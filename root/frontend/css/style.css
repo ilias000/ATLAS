@@ -955,7 +955,7 @@ h1, h2, h3, h4 {
 
 .btn.btn-outline-red {
   background: transparent;
-  border-width: 2px;
+  border-width: 1px;
   border-color: rgb(194, 62, 62);
   color: rgb(0, 0, 0); }
   .btn.btn-outline-red:hover {
@@ -964,7 +964,7 @@ h1, h2, h3, h4 {
 
 .btn.btn-outline-green {
   background: transparent;
-  border-width: 2px;
+  border-width: 1px;
   border-color: #338d54;
   color: rgb(0, 0, 0); }
   .btn.btn-outline-green:hover {

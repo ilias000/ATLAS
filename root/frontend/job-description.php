@@ -75,32 +75,62 @@ if ((isset($_GET['loggedIn'])) && (!strcmp($_GET['loggedIn'], "true"))) {
 
     <!-- NAVBAR -->
     <?php
-    if ((isset($_GET['loggedIn'])) && (!strcmp($_GET['loggedIn'], "true"))) { ?>
-      <header class="site-navbar">
-        <div class="container-fluid">
-          <div class="row align-items-center">
-            <div class="site-logo col-6"><a href="index.php">ΑΤΛΑΣ</a></div>
+    if ((isset($_GET['loggedIn'])) && (!strcmp($_GET['loggedIn'], "true"))) {
+      if ((!isset($user_data)) || (isset($user_data) && !strcmp($user_data['user_type'], "ΦΟΙΤΗΤΗΣ"))) { ?>
+        <header class="site-navbar">
+          <div class="container-fluid">
+            <div class="row align-items-center">
+              <div class="site-logo col-6"><a href="index.php">ΑΤΛΑΣ</a></div>
 
-            <nav class="mx-auto site-navigation">
-              <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
-                <li><a href="student.php">Αναζήτηση Θέσης</a></li>
-                <li><a href="savedJobs.php">Αγαπημένα</a></li>
-                <li><a href="search.php">Αιτήσεις</a></li>
-                <li><a href="faqStudent.php?loggedIn=true">Βοήθεια</a></li>
-                <li><a href="contact.php?loggedIn=true">Επικοινωνία</a></li>
-              </ul>
-            </nav>
+              <nav class="mx-auto site-navigation">
+                <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
+                  <li><a href="student.php">Αναζήτηση Θέσης</a></li>
+                  <li><a href="savedJobs.php">Αγαπημένα</a></li>
+                  <li><a href="search.php">Αιτήσεις</a></li>
+                  <li><a href="faqStudent.php?loggedIn=true">Βοήθεια</a></li>
+                  <li><a href="contact.php?loggedIn=true">Επικοινωνία</a></li>
+                </ul>
+              </nav>
 
-            <div class="right-cta-menu text-right d-flex aligin-items-center col-6">
-              <div class="ml-auto">
-                <a href="studentProfile.php" class="profile-button"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
-                <a href="../backend/logout.php" class="btn btn-outline-red border-width-1 d-none d-lg-inline-block" style="right: -50px; position: relative; color:white">Αποσύνδεση</a>
+              <div class="right-cta-menu text-right d-flex aligin-items-center col-6">
+                <div class="ml-auto">
+                  <a href="studentProfile.php" class="profile-button"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
+                  <a href="../backend/logout.php" class="btn btn-outline-red border-width-1 d-none d-lg-inline-block" style="right: -50px; position: relative; color:white">Αποσύνδεση</a>
+                </div>
+                <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"><span class="icon-menu h3 m-0 p-0 mt-2"></span></a>
               </div>
-              <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"><span class="icon-menu h3 m-0 p-0 mt-2"></span></a>
             </div>
           </div>
-        </div>
-      </header>
+        </header>
+      <?php
+      } elseif ((!isset($user_data)) || (isset($user_data) && !strcmp($user_data['user_type'], "ΕΤΑΙΡΕΙΑ"))) { ?>
+        <header class="site-navbar">
+          <div class="container-fluid">
+            <div class="row align-items-center">
+              <div class="site-logo col-6"><a href="index.php">ΑΤΛΑΣ</a></div>
+
+              <nav class="mx-auto site-navigation">
+                <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
+                  <li><a href="company.php">Ενεργές Θέσεις</a></li>
+                  <li><a href="post-job.php">Δημιουργία Θέσης</a></li>
+                  <li><a href="requests.php">Αιτήσεις</a></li>
+                  <li><a href="faqCompany.php?loggedIn=true">Βοήθεια</a></li>
+                </ul>
+              </nav>
+
+              <div class="right-cta-menu text-right d-flex aligin-items-center col-6">
+                <div class="ml-auto">
+                  <a href="companyProfile.php" class="profile-button"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
+                  <a href="../backend/logout.php" class="btn btn-outline-red border-width-1 d-none d-lg-inline-block" style="right: -50px; position: relative; color:white">Αποσύνδεση</a>
+                </div>
+                <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"><span class="icon-menu h3 m-0 p-0 mt-2"></span></a>
+              </div>
+            </div>
+          </div>
+        </header>
+      <?php
+      }
+      ?>
     <?php
     } else { ?>
       <header class="site-navbar mt-3">
@@ -143,11 +173,35 @@ if ((isset($_GET['loggedIn'])) && (!strcmp($_GET['loggedIn'], "true"))) {
         <div class="row">
           <div class="col-md-7">
             <h1 class="text-white font-weight-bold">Περιγραφή Θέσης</h1>
-            <div class="custom-breadcrumbs">
-              <a href="index.php">Αρχική</a> <span class="mx-2 slash">/</span>
-              <a href="search.php">Αναζήτηση Θέσης</a> <span class="mx-2 slash">/</span>
-              <span class="text-white"><strong>Περιγραφή Θέσης</strong></span>
-            </div>
+            <?php
+            if ((isset($_GET['loggedIn'])) && (!strcmp($_GET['loggedIn'], "true"))) {
+              if ((!isset($user_data)) || (isset($user_data) && !strcmp($user_data['user_type'], "ΦΟΙΤΗΤΗΣ"))) { ?>
+                <div class="custom-breadcrumbs">
+                  <a href="index.php">Αρχική</a> <span class="mx-2 slash">/</span>
+                  <a href="loginSignup.php">Είσοδος</a> <span class="mx-2 slash">/</span>
+                  <a href="student.php">Αναζήτηση Θέσης</a> <span class="mx-2 slash">/</span>
+                  <span class="text-white"><strong>Περιγραφή Θέσης</strong></span>
+                </div>
+              <?php
+              } elseif ((!isset($user_data)) || (isset($user_data) && !strcmp($user_data['user_type'], "ΕΤΑΙΡΕΙΑ"))) { ?>
+                <div class="custom-breadcrumbs">
+                  <a href="index.php">Αρχική</a> <span class="mx-2 slash">/</span>
+                  <a href="loginSignup.php">Είσοδος</a> <span class="mx-2 slash">/</span>
+                  <a href="company.php">Ενεργές Θέσεις</a> <span class="mx-2 slash">/</span>
+                  <span class="text-white"><strong>Περιγραφή Θέσης</strong></span>
+                </div>
+              <?php
+              }
+              ?>
+            <?php
+            } else { ?>
+              <div class="custom-breadcrumbs">
+                <a href="index.php">Αρχική</a> <span class="mx-2 slash">/</span>
+                <span class="text-white"><strong>Περιγραφή Θέσης</strong></span>
+              </div>
+            <?php
+            }
+            ?>
           </div>
         </div>
       </div>
@@ -235,7 +289,16 @@ if ((isset($_GET['loggedIn'])) && (!strcmp($_GET['loggedIn'], "true"))) {
                 <a href="#" class="btn btn-block btn-light btn-md"><span class="icon-heart-o mr-2 text-danger"></span>Αποθήκευση </a>
               </div>
               <div class="col-6">
-                <a href="request-form.php" class="btn btn-block btn-primary btn-md">Κάνε Αίτηση</a>
+                <?php
+                if ((!isset($user_data)) || (isset($user_data) && !strcmp($user_data['user_type'], "ΦΟΙΤΗΤΗΣ")))
+                  if ((isset($_GET['loggedIn'])) && (!strcmp($_GET['loggedIn'], "true"))) { ?>
+                  <a href="request-form.php" class="btn btn-block btn-primary btn-md">Κάνε Αίτηση</a>
+                <?php
+                  } else { ?>
+                  <a href="loginSignup.php?to=request-form.php&user_type=student" class="btn btn-block btn-primary btn-md">Κάνε Αίτηση</a>
+                <?php
+                  }
+                ?>
               </div>
             </div>
 
