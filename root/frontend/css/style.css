@@ -1789,3 +1789,7 @@ select{
 .icon-add, .icon-lock_outline{
   color: white;
 }
+
+.section-title, .mb-2, p{
+  color: white;
+}
