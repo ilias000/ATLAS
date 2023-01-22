@@ -90,7 +90,7 @@
                 <div class="right-cta-menu text-right d-flex aligin-items-center col-6">
                     <div class="ml-auto">
                         <a href="#" class="profile-button"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
-                        <a href="#" class="btn btn-outline-white border-width-1 d-none d-lg-inline-block" style="right: -50px; position: relative;">Αποσύνδεση</a>
+                        <a href="#" class="btn btn-outline-red border-width-1 d-none d-lg-inline-block" style="right: -50px; position: relative; color:white">Αποσύνδεση</a>
                     </div>
                     <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"><span class="icon-menu h3 m-0 p-0 mt-2"></span></a>
                 </div>
@@ -108,13 +108,20 @@
                     <h1 class="text-white font-weight-bold">
                         Φόρμα αίτησης
                     </h1>
+                    <div class="custom-breadcrumbs">
+                        <a href="index.php">Αρχική</a> <span class="mx-2 slash">/</span>
+                        <a href="loginSignup.php">Είσοδος</a> <span class="mx-2 slash">/</span>
+                        <a href="student.php">Αναζήτηση Θέσης</a> <span class="mx-2 slash">/</span>
+                        <a href="job-description.php">Περιγραφή Θέσης</a> <span class="mx-2 slash">/</span>
+                        <span class="text-white"><strong>Φόρμα αίτησης</strong></span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="site-section" style="height: 1000px;">
-        <form method="POST" class="p-4 border rounded" style="height: 100%; color:black">
+        <form method="POST" class="p-4 border rounded" action="student.php" style="height: 100%; color:black">
             <label for="first_name">Όνομα</label>
             <input type="text" name="first_name" placeholder="Όνομα" required oninvalid="this.setCustomValidity('Παρακαλώ εισάγετε ένα όνομα')" oninput="this.setCustomValidity('')"><br>
             <label for="last_name">Επίθετο</label>
@@ -136,9 +143,22 @@
                 })
             </script>
             <div style="display: flex; justify-content:space-between">
-                <input type="submit" onclick="return confirm('Θέλετε σίγουρα να κάνετε προσωρινή αποθήκευση της αίτησης?')" name="submit" class="btn px-4 btn-primary text-white" style="width:35%; border-radius: 5px" value="Προσωρινή Αποθήκευση">
-                <input type="submit" onclick="return confirm('Θέλετε σίγουρα να υποβάλλετε την αίτηση οριστικά?')" name="submit" class="btn px-4 btn-outline-red" style="width:35%; border-radius: 5px" value="Οριστική Υποβολή">
+                <input type="submit" onclick="confirmSubmitTemp()" name="submit_temp" class="btn px-4 btn-primary text-white" style="width:35%; border-radius: 5px" value="Προσωρινή Αποθήκευση">
+                <input type="submit" onclick="confirmSubmitPerm()" name="submit_perm" class="btn px-4 btn-outline-red" style="width:35%; border-radius: 5px" value="Οριστική Υποβολή">
             </div>
+            <script>
+                function confirmSubmitPerm() {
+                    if (confirm("Θέλετε σίγουρα να υποβάλλετε την αίτηση οριστικά?")) {
+                        return confirm("Η αίτησή σας καταχωρήθηκε με επιτυχία!");
+                    }
+                }
+
+                function confirmSubmitTemp() {
+                    if (confirm("Θέλετε σίγουρα να κάνετε προσωρινή αποθήκευση της αίτησης?")) {
+                        return confirm("Η αίτησή σας απθηκεύτηκε με επιτυχία!");
+                    }
+                }
+            </script>
         </form>
     </section>
 </div>

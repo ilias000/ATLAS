@@ -125,10 +125,10 @@ $user_data = check_login($connection); // If the user is not logged in they will
 
                     <nav class="mx-auto site-navigation">
                         <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
-                            <li><a href="search.php">Αναζήτηση Θέσης</a></li>
-                            <li><a href="search.php">Αγαπημένα</a></li>
+                            <li><a href="student.php">Αναζήτηση Θέσης</a></li>
+                            <li><a href="savedJobs.php">Αγαπημένα</a></li>
                             <li><a href="search.php">Αιτήσεις</a></li>
-                            <li><a href="#">Βοήθεια</a></li>
+                            <li><a href="faqStudent.html">Βοήθεια</a></li>
                             <li><a href="contact.php">Επικοινωνία</a></li>
                         </ul>
                     </nav>
@@ -136,7 +136,7 @@ $user_data = check_login($connection); // If the user is not logged in they will
                     <div class="right-cta-menu text-right d-flex aligin-items-center col-6">
                         <div class="ml-auto">
                             <a href="#" class="profile-button"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
-                            <a href="../backend/logout.php" class="btn btn-outline-white border-width-1 d-none d-lg-inline-block" style="right: -50px; position: relative;">Αποσύνδεση</a>
+                            <a href="../backend/logout.php" class="btn btn-outline-red border-width-1 d-none d-lg-inline-block" style="right: -50px; position: relative; color:white">Αποσύνδεση</a>
                         </div>
                         <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"><span class="icon-menu h3 m-0 p-0 mt-2"></span></a>
                     </div>
@@ -152,7 +152,7 @@ $user_data = check_login($connection); // If the user is not logged in they will
                             <h1 class="text-white font-weight-bold">Αναζήτηση Θέσης</h1>
                             <div class="custom-breadcrumbs">
                                 <a href="index.php">Αρχική</a> <span class="mx-2 slash">/</span>
-                                <a href="loginSignup.php">Είσοδος/Εγγραφή</a> <span class="mx-2 slash">/</span>
+                                <a href="loginSignup.php">Είσοδος</a> <span class="mx-2 slash">/</span>
                                 <span class="text-white"><strong>Αναζήτηση Θέσης</strong></span>
                             </div>
                         </div>
