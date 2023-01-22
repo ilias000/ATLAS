@@ -1,3 +1,8 @@
+<?php
+if (isset($_GET['textForSearch'])) {
+    $textForSearch = $_GET['textForSearch'];
+}
+?>
 <!doctype html>
 <html lang="en">
 
@@ -139,7 +144,12 @@
                         </div>
                         <form method="post" class="search-jobs-form">
                             <div class="row mb-5" style="justify-content: space-between; flex-wrap: nowrap">
-                                <input type="text" class="form-control form-control-lg" style="width: 75%; height: 50px" placeholder="Τίτλος θέσης απασχόλησης...">
+                                <input type="text" class="form-control form-control-lg" style="width: 75%; height: 50px" placeholder="Τίτλος θέσης απασχόλησης..." value=<?php
+                                                                                                                                                                            if (!isset($_GET['textForSearch'])) {
+                                                                                                                                                                                $textForSearch = '';
+                                                                                                                                                                            }
+                                                                                                                                                                            echo $textForSearch;
+                                                                                                                                                                            ?>>
                                 <button type="submit" class="btn btn-primary btn-lg btn-block btn-search search-button" style="width: 20%; height: 50px"><span class="icon-search icon mr-2"></span>Αναζήτηση</button>
                             </div>
                         </form>
@@ -226,7 +236,7 @@
                 <div class="listings">
                     <ul class="job-listings mb-5">
                         <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                            <a href="job-single.html"></a>
+                            <a href="job-description.php"></a>
                             <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
                                 <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
                                     <h2>Product Designer</h2>
@@ -244,7 +254,7 @@
 
                         </li>
                         <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                            <a href="job-single.html"></a>
+                            <a href="job-description.php"></a>
 
                             <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
                                 <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
@@ -263,7 +273,7 @@
                         </li>
 
                         <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                            <a href="job-single.html"></a>
+                            <a href="job-description.php"></a>
 
                             <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
                                 <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
@@ -282,7 +292,7 @@
                         </li>
 
                         <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                            <a href="job-single.html"></a>
+                            <a href="job-description.php"></a>
 
                             <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
                                 <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
@@ -301,7 +311,7 @@
                         </li>
 
                         <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                            <a href="job-single.html"></a>
+                            <a href="job-description.php"></a>
 
                             <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
                                 <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
@@ -319,7 +329,7 @@
                             </div>
                         </li>
                         <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                            <a href="job-single.html"></a>
+                            <a href="job-description.php"></a>
 
                             <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
                                 <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
@@ -338,7 +348,7 @@
 
                         </li>
                         <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-                            <a href="job-single.html"></a>
+                            <a href="job-description.php"></a>
 
                             <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
                                 <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">

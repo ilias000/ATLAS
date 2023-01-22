@@ -285,7 +285,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { // If something was posted
             <h1 class="text-white font-weight-bold">Εγγραφή / Είσοδος</h1>
             <div class="custom-breadcrumbs">
               <a href="index.php">Αρχική</a> <span class="mx-2 slash">/</span>
-              <span class="text-white"><strong>Είσοδος</strong></span>
+              <span class="text-white"><strong>Είσοδος/Εγγραφή</strong></span>
             </div>
           </div>
         </div>
