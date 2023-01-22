@@ -1874,4 +1874,25 @@ a.saved-jobs-prev, a.saved-jobs-next {
   color: white;
 }
 
+.saved-jobes-boxes{
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-start;
+  color: black;
+  border: 2px solid #3C6EAD;
+  padding: 5px;
+}
+.saved-jobes-boxes strong{
+  padding-right: 10px;
+
+}
+.saved-jobes-boxes .second{
+  padding-left: 2rem;
+  color: green;
+}
+
+.saved-jobes-buttons .first{
+
+}
+
 
