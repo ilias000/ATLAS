@@ -131,7 +131,7 @@
                         <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
                             <li><a href="student.php">Αναζήτηση Θέσης</a></li>
                             <li><a href="savedJobs.php">Αγαπημένα</a></li>
-                            <li><a href="a.php">Αιτήσεις</a></li>
+                            <li><a href="applications.php">Αιτήσεις</a></li>
                             <li><a href="faqStudent.html">Βοήθεια</a></li>
                             <li><a href="contact.php">Επικοινωνία</a></li>
                         </ul>
