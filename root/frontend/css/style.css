@@ -1859,40 +1859,6 @@ ul.text-black strong {
   font-weight: 600;
 }
 
-/* Saved Jobs */
 
-a.saved-jobs-prev, a.saved-jobs-next {
-  color: white;
-  width: auto;
-  height: 30px;
-  line-height: 30px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 4px;
-}
-.link-1-2-3{
-  color: white;
-}
-
-.saved-jobes-boxes{
-  display: flex;
-  justify-content: space-between;
-  align-items:flex-start;
-  color: black;
-  border: 2px solid #3C6EAD;
-  padding: 5px;
-}
-.saved-jobes-boxes strong{
-  padding-right: 10px;
-
-}
-.saved-jobes-boxes .second{
-  padding-left: 2rem;
-  color: green;
-}
-
-.saved-jobes-buttons .first{
-
-}
 
 

@@ -161,11 +161,12 @@ $user_data = check_login($connection); // If the user is not logged in they will
                 <div class="row align-items-center justify-content-center">
                     <div class="col-md-12" style="margin-top:80px">
                         <div class="mb-5 text-left">
-                            <h1 class="text-white font-weight-bold">Αιτήσεις</h1>
+                            <h1 class="text-white font-weight-bold">Αίτηση</h1>
                             <div class="custom-breadcrumbs">
                                 <a href="index.php">Αρχική</a> <span class="mx-2 slash">/</span>
                                 <a href="loginSignup.php">Είσοδος</a> <span class="mx-2 slash">/</span>
-                                <span class="text-white"><strong>Αιτήσεις</strong></span>
+                                <a href="loginSignup.php">Αιτήσεις</a> <span class="mx-2 slash">/</span>
+                                <span class="text-white"><strong>Αίτηση</strong></span>
                             </div>
                         </div>
                     </div>
