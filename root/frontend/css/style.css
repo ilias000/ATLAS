@@ -1807,3 +1807,31 @@ select{
 .responsibilities, .education, .ul-other span{
   color: #000;
 }
+.saved-jobs-h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3rem;
+  font-weight: 600;
+  color: white;
+
+}
+.saved-jobs-h2 .icon-heart-o{
+  padding-left: 1rem;
+  font-weight: 600;
+}
+
+/* Saved Jobs */
+
+a.saved-jobs-prev, a.saved-jobs-next {
+  color: white;
+  width: auto;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 4px;
+}
+.link-1-2-3{
+  color: white;
+}
