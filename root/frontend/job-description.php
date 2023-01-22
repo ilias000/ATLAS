@@ -80,10 +80,10 @@
       <div class="container">
         <div class="row">
           <div class="col-md-7">
-            <h1 class="text-white font-weight-bold">Job Description</h1>
+            <h1 class="text-white font-weight-bold">Περιγραφή Θέσης</h1>
             <div class="custom-breadcrumbs">
-              <a href="#">Home</a> <span class="mx-2 slash">/</span>
-              <a href="#">Job</a> <span class="mx-2 slash">/</span>
+              <a href="#">Αρχική</a> <span class="mx-2 slash">/</span>
+              <a href="#">Περιγραφή Θέσης</a> <span class="mx-2 slash">/</span>
               <span class="text-white"><strong>Product Designer</strong></span>
             </div>
           </div>
