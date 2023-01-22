@@ -104,7 +104,7 @@
                 <h2>Product Designer</h2>
                 <div>
                   <span class="ml-0 mr-2 mb-2"><span class="icon-briefcase mr-2 job-description-icon"><span class="company-name">Puma</span>
-                  <span class="m-2"><span class="icon-room mr-2"></span>New York City</span>
+                  <span class="m-2"><span class="icon-room mr-2"></span>Αθήνα</span>
                   <span class="m-2"><span class="icon-clock-o mr-2"></span><span class="text-primary">Full Time</span></span>
                 </div>
               </div>
@@ -113,10 +113,10 @@
           <div class="col-lg-4">
             <div class="row">
               <div class="col-6">
-                <a href="#" class="btn btn-block btn-light btn-md"><span class="icon-heart-o mr-2 text-danger"></span>Save Job</a>
+                <a href="#" class="btn btn-block btn-light btn-md"><span class="icon-heart-o mr-2 text-danger"></span>Αγαπημένα</a>
               </div>
               <div class="col-6">
-                <a href="#" class="btn btn-block btn-primary btn-md">Apply Now</a>
+                <a href="#" class="btn btn-block btn-primary btn-md">Κάνε Αίτηση</a>
               </div>
             </div>
           </div>
