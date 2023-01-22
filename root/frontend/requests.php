@@ -189,7 +189,7 @@ $user_data = check_login($connection); // If the user is not logged in they will
                                 <i class="fa fa-phone" aria-hidden="true"></i> +30 0000000000
                             </div>
                             <button onclick="window.location.href='rejection.php'" class="btn btn-outline-red btn-sm post-btn">Απόρριψη</button>
-                            <button onclick="window.location.href='edit-job.php'" class="btn btn-outline-green btn-sm preview-btn">Αποδοχή</button>
+                            <button onclick="window.location.href='#'" class="btn btn-outline-green btn-sm preview-btn">Αποδοχή</button>
                         </div>
 
                     </li>
@@ -205,7 +205,7 @@ $user_data = check_login($connection); // If the user is not logged in they will
                                 <i class="fa fa-phone" aria-hidden="true"></i> +30 0000000000
                             </div>
                             <button onclick="window.location.href='rejection.php'" class="btn btn-outline-red btn-sm post-btn">Απόρριψη</button>
-                            <button onclick="window.location.href='edit-job.php'" class="btn btn-outline-green btn-sm preview-btn">Αποδοχή</button>
+                            <button onclick="window.location.href='#'" class="btn btn-outline-green btn-sm preview-btn">Αποδοχή</button>
                         </div>
 
                     </li>
@@ -221,7 +221,7 @@ $user_data = check_login($connection); // If the user is not logged in they will
                                 <i class="fa fa-phone" aria-hidden="true"></i> +30 0000000000
                             </div>
                             <button onclick="window.location.href='rejection.php'" class="btn btn-outline-red btn-sm post-btn">Απόρριψη</button>
-                            <button onclick="window.location.href='edit-job.php'" class="btn btn-outline-green btn-sm preview-btn">Αποδοχή</button>
+                            <button onclick="window.location.href='#'" class="btn btn-outline-green btn-sm preview-btn">Αποδοχή</button>
                         </div>
 
                     </li>
@@ -237,7 +237,7 @@ $user_data = check_login($connection); // If the user is not logged in they will
                                 <i class="fa fa-phone" aria-hidden="true"></i> +30 0000000000
                             </div>
                             <button onclick="window.location.href='rejection.php'" class="btn btn-outline-red btn-sm post-btn">Απόρριψη</button>
-                            <button onclick="window.location.href='edit-job.php'" class="btn btn-outline-green btn-sm preview-btn">Αποδοχή</button>
+                            <button onclick="window.location.href='#'" class="btn btn-outline-green btn-sm preview-btn">Αποδοχή</button>
                         </div>
 
                     </li>
@@ -253,7 +253,7 @@ $user_data = check_login($connection); // If the user is not logged in they will
                                 <i class="fa fa-phone" aria-hidden="true"></i> +30 0000000000
                             </div>
                             <button onclick="window.location.href='rejection.php'" class="btn btn-outline-red btn-sm post-btn">Απόρριψη</button>
-                            <button onclick="window.location.href='edit-job.php'" class="btn btn-outline-green btn-sm preview-btn">Αποδοχή</button>
+                            <button onclick="window.location.href='#'" class="btn btn-outline-green btn-sm preview-btn">Αποδοχή</button>
                         </div>
 
                     </li>
