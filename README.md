@@ -15,4 +15,4 @@ Users:
 - Put the project files to C:\xampp\htdocs\  
 - Start Apache and MySQL from XAMPP  
 - Go to <http://localhost/phpmyadmin/> and import the Database sdi1800335.sql from C:\xampp\htdocs\ATLAS-main  
-- Go to <http://localhost/ATLAS/root/frontend/>  
+- Go to <http://localhost/ATLAS-main/root/frontend/>  
