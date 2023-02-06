@@ -1,41 +1,18 @@
 # ATLAS
 
-Μέλη ομάδας :
- Όνομα : ΗΛΙΑΣ ΠΙΟΤΟΠΟΥΛΟΣ, KLERIANA KURRA
- AM : 1115201800335, 1115201800230
+Web application for students internships using HTML, CSS, JavaScript and PHP. The UI design has been created with Figma.
+The backend works only for login, sign up and sessions.
 
-Έχουν υλοποιηθεί :
-
-- Αρχική σελίδα (Frontend).
-- Σελίδα Σύνδεσης/Εγγραφής Φοιτητή/τριας - Εταιρείας (Backend και Frontend).
-- Σελίδα με πληροφορίες για τους Φοιτητές/τριες.
-- Σελίδα με πληροφορίες για την Εταιρεία.
-- Σελίδα αναζήτησης διαθέσιμων θέσεων. (Frontend)
-- Σελίδα αποτελεσμάτων αναζήτησης διαθέσιμων θέσεων. (Frontend)
-- Σελίδα επικοινωνίας (Frontend).
-- Σελίδα περιγραφής θέσης για φοιτητή/τρια (Frontend).
-- Σελίδα περιγραφή θέσης για εταιρεία (Frontend).
-- Σελίδα με αγαπημένες θέσεις φοιτητή/ριας (Frontend).
-- Σελίδα υποβολής αίτησης φοιτητή/ριας (Frontend).
-- Σελίδα με τις αιτήσεις που έχει υποβάλει ο φοιτητής/ια (Frontend).
-- Σελίδα επεξεργασίας αίτησης φοιτητή/τριας (Frontend).
-- Σελίδα προφίλ φοιτητή/τριας (Frontend).
-- Σελίδα με τις ενεργές θέσεις της εταιρείας (Frontend).
-- Σελίδα προεπισκόπησης μίας θέσης της εταιρείας (Frontend).
-- Σελίδα επεξεργασίας μίας θέσης της εταιρείας (Frontend).
-- Σελίδα δημιουργίας μίας θέσης της εταιρείας (Frontend).
-- Σελίδα με τις αιτήσεις των φοιτητών/τριων των θέσεων της εταιρείας (Frontend).
-- Σελίδα με τις λεπτομέρειες μίας αίτησης ενός φοιτητή/τριας μίας θέσης της εταιρείας (Frontend).
-- Σελίδα λόγου απόρριψης μίας αίτησης μίας θέσης της εταιρείας (Frontend).
-- Σελίδα προφίλ της εταιρείας (Frontend).
-- Σελίδα αποδοχής - απόρριψης αιτήσεων φοιτητών/τριων από την εταιρεία (Frontend).
-- Sessions
-- Όλες οι σελίδες έχουν backend έτσι ώστε να μην μπορεί κάποιος να τις επισκεφτεί χωρίς να έχει κάνει σύνδεση.
-- Όλες οι σελίδες έχουν backend έτσι ώστε να αλλάζουν δυναμικά τα μενού και τα breadcrumps όπου χρειάζεται ανάλογα με τον χρήστη που είναι συνδεδεμένος.
-
-Σύνδεση χρηστών:
+Users:
  Email : student@mail.com
- Κωδικός : 123
+ Password : 123
 
  Email : company@mail.com
- Κωδικός : 123
+ Password : 123
+
+ Steps to run the application:
+ - Download and run XAMPP.
+- Put the project files to C:\xampp\htdocs\
+- Start Apache and MySQL
+- Go to <http://localhost/phpmyadmin/> and import the Database
+- Go to <http://localhost/ATLAS/root/frontend/>
