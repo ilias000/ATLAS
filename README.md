@@ -4,11 +4,11 @@ Web application for students internships using HTML, CSS, JavaScript and PHP. Th
 The backend works only for login, sign up and sessions.  
   
 Users:  
- Email : student@mail.com  
- Password : 123  
+ - Email : student@mail.com  
+   Password : 123  
   
- Email : company@mail.com  
- Password : 123  
+ - Email : company@mail.com  
+   Password : 123  
 
  Steps to run the application:  
 - Download and run XAMPP  
