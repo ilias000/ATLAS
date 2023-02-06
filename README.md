@@ -14,5 +14,5 @@ Users:
 - Download and run XAMPP  
 - Put the project files to C:\xampp\htdocs\  
 - Start Apache and MySQL from XAMPP  
-- Go to <http://localhost/phpmyadmin/> and import the Database  
+- Go to <http://localhost/phpmyadmin/> and import the Database from C:\xampp\htdocs\ATLAS-main  
 - Go to <http://localhost/ATLAS/root/frontend/>  
