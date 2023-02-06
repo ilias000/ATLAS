@@ -4,6 +4,7 @@
   z-index: 1999;
   position: absolute;
   width: 100%;
+  background-color: #3C6EAD;
   top: 2rem; }
   .site-navbar .container-fluid {
     padding-left: 7rem;
@@ -379,7 +380,7 @@
         color: #000; }
         .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a:after {
           height: 2px;
-          background: #89ba16;
+          background: #3C6EAD;
           content: "";
           position: absolute;
           bottom: 0;
@@ -427,6 +428,12 @@ body {
       opacity: 1;
       visibility: visible; }
 
+
+/* Sign Up/Login */
+.text-white.font-weight-bold{
+  color: #fff;
+}
+
 h1, h2, h3, h4 {
   color: #000; }
 
@@ -438,9 +445,6 @@ h1, h2, h3, h4 {
     .site-section {
       padding-top: 3rem;
       padding-bottom: 3rem; } }
-
-.text-black {
-  color: #000 !important; }
 
 .home-section {
   position: relative; }
@@ -931,9 +935,9 @@ h1, h2, h3, h4 {
   background: #3C6EAD;
   border-color: #ffffff;}
   .btn.btn-primary:hover {
-    color: #000;
+    color: #3C6EAD ; 
     background: #ffffff;
-    border-color: #ffffff; }
+    border-color: #3C6EAD;}
   .btn.btn.btn-primary:active {
     background-color: #3C6EAD;
     color: #fff;
@@ -948,6 +952,24 @@ h1, h2, h3, h4 {
   .btn.btn-outline-white:hover {
     background: #fff;
     color: #000; }
+
+.btn.btn-outline-red {
+  background: transparent;
+  border-width: 1px;
+  border-color: rgb(194, 62, 62);
+  color: rgb(0, 0, 0); }
+  .btn.btn-outline-red:hover {
+    background: rgb(194, 62, 62);
+    color: #fff; }
+
+.btn.btn-outline-green {
+  background: transparent;
+  border-width: 1px;
+  border-color: #338d54;
+  color: rgb(0, 0, 0); }
+  .btn.btn-outline-green:hover {
+    background: #338d54;
+    color: #fff; }
 
 .btn.btn-outline-primary {
   color: #3C6EAD; }
@@ -983,9 +1005,9 @@ h1, h2, h3, h4 {
 
 .border-width-2 {
   border-width: 2px !important; }
-
+/* Because at the contact form the button had problem
 .btn-md {
-  padding: 12px 20px; }
+  padding: 12px 20px; } */
 
 .slanted:after, .slanted-gray:after {
   content: "";
@@ -1031,8 +1053,8 @@ h1, h2, h3, h4 {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    border: 1px solid #89ba16;
-    background: #89ba16;
+    border: 1px solid #3C6EAD;
+    background: #3C6EAD;
     margin-bottom: 1.5rem;
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
@@ -1077,7 +1099,7 @@ h1, h2, h3, h4 {
     .block__62849 .block__16443:hover .custom-icon {
       background: transparent; }
       .block__62849 .block__16443:hover .custom-icon [class^="icon-"], .block__62849 .block__16443:hover .custom-icon [class^="flaticon-"] {
-        color: #89ba16; }
+        color: #3C6EAD; }
 
 .block__87154 {
   position: relative;
@@ -1194,6 +1216,7 @@ h1, h2, h3, h4 {
   color: #ced4da !important; }
 
 .block__76208 .accordion-item .heading {
+  margin-left: -30rem;
   font-size: 16px;
   font-weight: 400;
   padding: 10px 0; }
@@ -1219,9 +1242,9 @@ h1, h2, h3, h4 {
       -webkit-transition: .3s all ease;
       -o-transition: .3s all ease;
       transition: .3s all ease;
-      background: #89ba16;
+      background: #3C6EAD;
       color: #fff;
-      border: 1px solid #89ba16; }
+      border: 1px solid #3C6EAD; }
     .block__76208 .accordion-item .heading > a[aria-expanded="false"]:before {
       content: "\e313";
       color: #ccc;
@@ -1362,7 +1385,7 @@ height: 200px; }
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
-      color: #000 !important; }
+      color: #fff !important; }
 
 .copyright {
   color: rgba(255, 255, 255, 0.5); }
@@ -1527,9 +1550,9 @@ height: 200px; }
   .ul-check.white li:before {
     color: #fff; }
   .ul-check.success li:before {
-    color: #89ba16; }
+    color: #3C6EAD; }
   .ul-check.primary li:before {
-    color: #89ba16; }
+    color: #3C6EAD; }
 
 .block__18514 .block__47528 li {
   margin-bottom: 10px; }
@@ -1579,7 +1602,7 @@ height: 200px; }
   box-shadow: none !important; }
 
 .form-control:active, .form-control:focus {
-  border-color: #89ba16 !important; }
+  border-color: #3C6EAD !important; }
 
 .comment-form-wrap {
   clear: both; }
@@ -1662,7 +1685,7 @@ height: 200px; }
       background: rgba(0, 0, 0, 0.2);
       margin: 5px; }
     .single-carousel .owl-dots .owl-dot.active > span {
-      background: #89ba16; }
+      background: #3C6EAD; }
 
 .single-carousel img {
   max-width: 400px;
@@ -1741,3 +1764,101 @@ height: 200px; }
   max-width: 100%;
   flex: none;
 }
+
+input, select{
+  margin-bottom: 1rem;
+  height: 38px;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  padding-left: 10px;
+}
+input{
+  width: 97%;
+
+}
+select{
+  width: 100%;
+}
+
+
+.ContactForm{
+  min-width: -webkit-fill-available;
+}
+
+.form-errors{
+  color: red;
+}
+
+.job-listing {
+  height: 150px;
+  width: 100%;
+}
+
+.job-listing-location {
+  color: black;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  }
+  
+  ::-webkit-scrollbar-track {
+  border: 1px solid #3C6EAD;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+  background: #3C6EAD;  
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+  background: #224d81;  
+  }
+
+
+
+/* Job Description */
+
+.company-name{
+  padding-left: 0.8rem;
+  color: #000;
+}
+.job-description-icon{
+  color: #000;
+  padding-right: 1rem;
+}
+ul.text-black strong {
+  font-weight: 600;
+  color:#212529; 
+}
+
+.job-summary-text{
+  color: #3C6EAD;
+  font-weight: 600;
+}
+.job-description-text{
+  color: #000;
+}
+.responsibilities-text{
+  color: #000;
+}
+
+.responsibilities, .education, .ul-other span{
+  color: #000;
+}
+.saved-jobs-h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3rem;
+  font-weight: 600;
+  color: white;
+
+}
+.saved-jobs-h2 .icon-heart-o{
+  padding-left: 1rem;
+  font-weight: 600;
+}
+
+
+
+

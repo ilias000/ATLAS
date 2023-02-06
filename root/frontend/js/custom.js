@@ -246,14 +246,14 @@ jQuery(function($) {
 			  modules: {
 			    toolbar: toolbarOptions,
 			  },
-			  placeholder: 'Compose an epic...',
+			  placeholder: 'Κείμενο',
 			  theme: 'snow'  // or 'bubble'
 			});
 			var quill = new Quill('#editor-2', {
 			  modules: {
 			    toolbar: toolbarOptions,
 			  },
-			  placeholder: 'Compose an epic...',
+			  placeholder: 'Κείμενο',
 			  theme: 'snow'  // or 'bubble'
 			});
 		}
