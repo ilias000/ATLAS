@@ -11,7 +11,7 @@ Users:
  Password : 123
 
  Steps to run the application:
- - Download and run XAMPP.
+- Download and run XAMPP.
 - Put the project files to C:\xampp\htdocs\
 - Start Apache and MySQL
 - Go to <http://localhost/phpmyadmin/> and import the Database
